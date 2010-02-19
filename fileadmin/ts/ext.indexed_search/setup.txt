@@ -1,0 +1,96 @@
+# Indexierung des Contents erlauben (=1)
+config.index_enable = 1
+
+# Externe Seiten indexieren (=1)
+config.index_externals = 0
+
+# Metatags indexieren (=1)
+config.index_metatags = 1
+
+plugin.tx_indexedsearch {
+#	templateFile = EXT:zalom/fileadmin/ext/indexed_search/indexed_search.html
+	templateFile = fileadmin/ext/indexed_search/indexed_search_css_tmpl.html
+	
+	show {
+		rules = 1
+		parsetimes = 0
+		L2sections = 0
+		L1sections = 1
+		LxALLtypes = 0
+		clearSearchBox = 0
+		clearSearchBox.enableSubSearchCheckBox = 0
+		forbiddenRecords = 0
+		alwaysShowPageLinks = 0
+		advancedSearchLink = 1
+		resultNumber = 0
+		mediaList =
+	}
+
+	# Advanced-Search einstellungen
+	# Blinding of option-selectors / values in these (advanced search) (see $optValues array in source code for options + extResume checkbox)
+	blind {
+		type = 0
+		defOp = 0
+		sections = 0
+		freeIndexUid = 1
+		media = 0
+		order = 0
+		group = 0
+		lang = 0
+		desc = 0
+		results = 0
+		# defOp.1=1
+		# extResume=1
+	}
+	
+	rules_stdWrap {
+	}
+	
+	sectionlinks_stdWrap {
+	}
+	
+	path_stdWrap {
+	}
+	
+	search {
+		rootPidList = 1
+		page_links = 10
+		detect_sys_domain_records = 0
+		defaultFreeIndexUidList =
+		skipExtendToSubpagesChecking = 0
+		exactCount = 0
+	}
+
+	result_link_target = 
+/*
+	flagRendering = CASE
+	flagRendering {
+		key.current = 1
+		2 = TEXT
+		2.value = German
+		default = TEXT
+		default.value = English
+	}
+*/
+/*
+	iconRendering = CASE
+	iconRendering {
+		key.current = 1
+		html = TEXT
+		html.value = HtmL
+		default = TEXT
+		default.value = TYPO3 pages
+	}
+*/
+	forwardSearchWordsInResultLink = 0
+
+	# Setting default values for piVars (please see the source code for the form-field names which you can preset values for here)
+	_DEFAULT_PI_VARS {
+		extResume = 1
+		type = 1
+		group = flat
+	}
+	_CSS_DEFAULT_STYLE >
+	_LOCAL_LANG {
+	}
+}

@@ -1,0 +1,33 @@
+# Generiert die Headergrafik
+lib.nl_header = IMAGE
+lib.nl_header {
+	file = GIFBUILDER
+   	file {
+   		XY = 560,160
+     
+   		10 = IMAGE
+   		10.file.import = uploads/media/
+   		10.file.import.data = levelmedia: -1, slide
+	    10.file.import.listNum = 0
+	    10.offset = 440,20
+		    
+	    # CLOUD
+    	20 = IMAGE
+    	20.file.import = uploads/media/
+     		
+    	# levelmedia: 0 
+    	# => Definiert, dass die Ebene 20. und 30. lediglich auf der 
+    	#	 untersten (root)-Page geändert werden können.
+ 		
+    	20.file.import.data = levelmedia: 0
+		20.file.import.listNum = 1
+		20.offset = 230,-20
+
+		# LOGO
+   		30 = IMAGE
+   		30.file.import = uploads/media/
+   		30.file.import.data = levelmedia: 0
+		30.file.import.listNum = 2
+		30.offset = 420,5
+     }
+}

@@ -1,0 +1,18 @@
+# Entfernt 1 | CONTENT ELEMENT, uid:{field:uid}/{field:CType} <!--  CONTENT ELEMENT, uid:134/text [begin] -->
+tt_content.stdWrap.prefixComment >
+
+# Entfernt 2 | Text: <!--  Text: [begin] -->
+tt_content.text.20.prefixComment >
+
+# Entfernt 2 | Plugin inserted: <!--  Plugin inserted: [begin] -->
+tt_content.list.20.stdWrap.prefixComment >
+
+
+#[PIDinRootline = 1]
+#[END]
+
+# Konfiguration fuer Newsletter
+[PIDinRootline = 10300]
+tt_content.stdWrap.dataWrap >
+tt_content.stdWrap.space >
+[END]

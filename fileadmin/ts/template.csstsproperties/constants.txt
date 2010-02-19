@@ -1,0 +1,25 @@
+# Konstanten, welche sowohl im CSS als auch im TS vorhanden sein müssen.
+# 
+# Konzept: 
+# Diese Datei wird benötigt, da mittels TypoScript nicht auf CSS-Values zugegriffen werden kann.
+# Im Sinne der Standardisierung sollen Grössen in TypoScript-Anweisungen immer per Variable erfasst
+# werden. Das ermölicht bei einer Layout-Anpassung höchstmögliche Flexibilität.
+
+# Beispiel die Datei: lib.header_style.ts
+#
+#    		file = GIFBUILDER
+#   		file {
+#     			XY = {$css.id.header.width},{$css.id.header.height}
+
+css{
+	class{
+		page_margins.width = 1000
+	}
+
+	id{
+		header{
+			width  = 900
+			height = 230
+		}
+	}
+}

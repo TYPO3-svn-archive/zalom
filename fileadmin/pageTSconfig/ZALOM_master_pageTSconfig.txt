@@ -1,0 +1,3 @@
+# pageTSconfig
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:zalom/fileadmin/pageTSconfig/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:zalom/fileadmin/pageTSconfig/BE.txt">

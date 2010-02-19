@@ -1,0 +1,58 @@
+
+
+Zalom ToDo Prototype
+================================================================================
+
+EXT: direct_mail
+--------------------------------------------------------------------------------
+- <script src="uploads/tx_t3jquery/jquery-ui-1.7.2.js" type="text/javascript"></script>
+- Cronjob ueberpruefen; scheint nicht selbststaendig zu laufen
+
+
+EXT: felogin
+--------------------------------------------------------------------------------
+- Im verschickten E-Mail ist keine Frist eingefuegt, wie lange der Link gueltig ist
+  => bug report erstellt
+
+
+EXT: powermail
+--------------------------------------------------------------------------------
+- Dem Mandatory-Zeichen '*'-Span die Klasse hinzufuegen "mandatory_field" im Template oder TS
+- plugin.tx_srfreecap.siteTagDomain = www.mydomain.org
+- auch nicht ausgefuellte Felder werden in der Vorschau angezeigt
+- wenn nach erfolgtem Absenden eines ausgefuellten Formulares dieses via Navigation wieder angezeigt wird, sind die Felder nicht leer
+
+
+EXT calendar
+--------------------------------------------------------------------------------
+- EXT calendar: Templates anpassen fuer CSS Global-Steuerung
+
+
+EXT: date2cal
+--------------------------------------------------------------------------------
+- Bei Anwendung von date2cal in EXT:powermail gibt es eine JavaScript-Fehlermeldung: syntax-error
+
+
+EXT: ve_guestbook
+--------------------------------------------------------------------------------
+- Mandatory-Fehlermeldung in rot darstellen ohne Serveruebermittlung (JavaScript) (wie in Powermail)
+- Dem Mandatory-Zeichen '*'-Span die Klasse hinzufuegen "mandatory" im Template oder TS
+
+
+EXT: sr_feuser_register
+--------------------------------------------------------------------------------
+- Fehler in verschicktem Infomail: Textteil ist in <b>-wrap, welches aber sichtbar ausgegeben wird
+- input[type=file] lässt sich per CSS nicht formatieren. Mit jQuery kann es aber so umgebaut werden, 
+dass es per CSS gelayoutet werden kann:
+http://www.ihaslayout.com/2009/04/09/fileuploadfeld-komplett-mit-css-stylen/
+- <dl>-Tag noch vorhanden in:
+<label for="tx-srfeuserregister-pi1-module_sys_dmail_category">Receive news on any of these subjects? </label>
+<input id="tx-srfeuserregister-pi1-module_sys_dmail_category" type="hidden" value="" name="FE[fe_users][module_sys_dmail_category]"/>
+<dl class="tx-srfeuserregister-pi1-multiple-checkboxes" title=""/>
+
+
+Symlink
+--------------------------------------------------------------------------------
+- in FILEADMIN einen Symlink einbauen, welcher direkt auf die EXT: ZALOM verweist fuer schnelleren Zugriff
+
+

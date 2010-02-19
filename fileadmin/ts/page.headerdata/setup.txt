@@ -1,0 +1,7 @@
+# Obsolet: 09.02.2010: Definierte die verwendeten CSS-Files anhand der Datenstruktur von TemplaVoila.
+# -------------------------------------------------------------------------------------------------------------
+page.headerData.10 >
+
+# Perfect-Lightbox jQuery
+# -------------------------------------------------------------------------------------------------------------
+# page.headerData.20 = (Definiert in: EXT:zalom/fileadmin/ts/ext.perfectlightboxjquery/setup.txt)

@@ -1,0 +1,14 @@
+# Zur Übersichtlichkeit werden ein paar Tabellen ausgeblendet
+# z.Bsp. auf der Seite ID = 0 (Weltkugel) die statischen Tabellen
+mod.web_list.hideTables := addToList(static_template,static_territories,static_countries,static_country_zones,static_languages,static_currencies,static_markets)
+
+# Im Seitenbaum die Seiten-ID anzeigen
+options.pageTree.showPageIdWithTitle = 1
+
+# Erlaubt den File-Upload über das Link-Pop-Up
+options.uploadFieldsInTopOfEB = 1
+
+# Header (Inhaltselement) auf Typ2 setzen
+TCAdefaults.tt_content.header_layout = 2
+
+mod.web_txtemplavoilaM1.enableDeleteIconForLocalElements = 2

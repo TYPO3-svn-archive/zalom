@@ -1,0 +1,18 @@
+# Konfiguration der EXT: Spamschield
+# Extension Key: wt_spamshield
+
+plugin.wt_spamshield {
+	enable.powermail = 1
+	enable.ve_guestbook = 1
+	redirect.ve_guestbook = 83
+	message {
+		session.note1 = Schicken Sie das Formular schneller ab. Diese Massnahme schützt uns vor ungewünschtem Spam.
+		session.note2 = Sie können nicht schon wieder ein Formular abschicken. Diese Massnahme schützt uns vor ungewünschtem Spam.
+		session.note3 = Löschen Sie nicht Ihre Session. Diese Massnahme schützt uns vor ungewünschtem Spam.
+		httpcheck = Es ist nicht erlaubt, mehr als %s Links zu übermitteln. Diese Massnahme schützt uns vor ungewünschtem Spam.
+		uniquecheck = Jede Eingabe muss unterschiedlichen Inhalt haben. Diese Massnahme schützt uns vor ungewünschtem Spam.
+		namecheck = Es ist nicht erlaubt, den gleichen Vorname und Nachname zu benutzen. Diese Massnahme schützt uns vor ungewünschtem Spam.
+		akismet = Es existiert ein Akismet-Eintrag. Diese Massnahme schützt uns vor ungewünschtem Spam.
+		honeypod = Es existiert ein Honeypod-Eintrag. Diese Massnahme schützt uns vor ungewünschtem Spam.
+	}
+}

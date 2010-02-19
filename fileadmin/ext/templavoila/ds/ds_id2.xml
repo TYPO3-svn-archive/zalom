@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+		<beLayout><![CDATA[	
+      
+<table width="100%" border="1px" style="border: 3px solid #cccccc; background:#ffffff">
+ <tr>
+  <td width="100%" colspan="3">###header_content###</td>
+ </tr>
+ <tr>
+  <td width="100%" colspan="3">###teaser_content###</td>
+ </tr>
+ <tr>
+  <td width="25%" valign="top">###col1_content_content###</td>
+  <td width="50%" valign="top">###col3_content_content###</td>
+  <td width="25%" valign="top">###col2_content_content###</td>
+ </tr>
+ <tr>
+  <td width="100%" colspan="3">###footer_content###</td>
+ </tr>
+</table>
+   
+]]></beLayout>
+	</meta>
+	<ROOT type="array">
+		<tx_templavoila type="array">
+			<title>ROOT</title>
+			<description>Select the HTML element on the page which you want to be the overall container element for the template.</description>
+		</tx_templavoila>
+		<type>array</type>
+		<el type="array">
+			<header_content type="array">
+				<tx_templavoila type="array">
+					<title>Kopfzeile</title>
+					<sample_data type="array">
+						<numIndex index="0">Integer cursus nisi ante, eu viverra libero. Vestibulum iaculis metus.</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<TypoScript><![CDATA[
+	10= RECORDS
+	10.source.current=1
+	10.tables = tt_content
+	10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+                    ]]></TypoScript>
+					<oldStyleColumnNumber type="integer">0</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<label>Kopfzeile</label>
+				</TCEforms>
+			</header_content>
+			<col1_content_content type="array">
+				<tx_templavoila type="array">
+					<title>Inhalt Spalte 1</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<TypoScript><![CDATA[
+	10= RECORDS
+	10.source.current=1
+	10.tables = tt_content
+	10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+                    ]]></TypoScript>
+					<oldStyleColumnNumber type="integer">1</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<label>Inhalt Spalte 1</label>
+				</TCEforms>
+			</col1_content_content>
+			<col3_content_content type="array">
+				<tx_templavoila type="array">
+					<title>Inhalt Spalte 3</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<TypoScript><![CDATA[
+	10= RECORDS
+	10.source.current=1
+	10.tables = tt_content
+	10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+                    ]]></TypoScript>
+					<oldStyleColumnNumber type="integer">2</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<label>Inhalt Spalte 3</label>
+				</TCEforms>
+			</col3_content_content>
+			<col2_content_content type="array">
+				<tx_templavoila type="array">
+					<title>Inhalt Spalte 2</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<TypoScript><![CDATA[
+	10= RECORDS
+	10.source.current=1
+	10.tables = tt_content
+	10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+                    ]]></TypoScript>
+					<oldStyleColumnNumber type="integer">3</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<label>Inhalt Spalte 2</label>
+				</TCEforms>
+			</col2_content_content>
+			<footer_content type="array">
+				<tx_templavoila type="array">
+					<title>Fusszeile</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<TypoScript><![CDATA[
+	10= RECORDS
+	10.source.current=1
+	10.tables = tt_content
+	10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+                    ]]></TypoScript>
+					<oldStyleColumnNumber type="integer">4</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<label>Fusszeile</label>
+				</TCEforms>
+			</footer_content>
+			<col1_content_top type="array">
+				<tx_templavoila type="array">
+					<title>lib.col1_content_top</title>
+					<sample_data type="array">
+						<numIndex index="0">Mauris ultricies ullamcorper est, id facilisis neque consequat nullam.</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.col1_content_top</TypoScriptObjPath>
+				</tx_templavoila>
+			</col1_content_top>
+			<col1_content_bottom type="array">
+				<tx_templavoila type="array">
+					<title>lib.col1_content_bottom</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.col1_content_bottom</TypoScriptObjPath>
+				</tx_templavoila>
+			</col1_content_bottom>
+			<col2_content_top type="array">
+				<tx_templavoila type="array">
+					<title>lib.col2_content_top</title>
+					<sample_data type="array">
+						<numIndex index="0">Mauris dolor ligula, faucibus in iaculis in, tristique at libero amet.</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.col2_content_top</TypoScriptObjPath>
+				</tx_templavoila>
+			</col2_content_top>
+			<col2_content_bottom type="array">
+				<tx_templavoila type="array">
+					<title>lib.col2_content_bottom</title>
+					<sample_data type="array">
+						<numIndex index="0">Nulla accumsan feugiat felis. Pellentesque fermentum posuere nisi sed.</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.col2_content_bottom</TypoScriptObjPath>
+				</tx_templavoila>
+			</col2_content_bottom>
+			<col3_content_top type="array">
+				<tx_templavoila type="array">
+					<title>lib.col3_content_top</title>
+					<sample_data type="array">
+						<numIndex index="0">Aenean non nibh nulla, eget aliquet mauris. Quisque pulvinar volutpat.</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.col3_content_top</TypoScriptObjPath>
+				</tx_templavoila>
+			</col3_content_top>
+			<col3_content_bottom type="array">
+				<tx_templavoila type="array">
+					<title>lib.col3_content_bottom</title>
+					<sample_data type="array">
+						<numIndex index="0">Mauris sit amet congue lectus! Quisque iaculis diam a nunc rutrum sed.</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.col3_content_bottom</TypoScriptObjPath>
+				</tx_templavoila>
+			</col3_content_bottom>
+			<topnav type="array">
+				<tx_templavoila type="array">
+					<title>lib.topnav</title>
+					<description>Quicknavigation im Headerbereich</description>
+					<sample_data type="array">
+						<numIndex index="0">Nam in urna arcu, vitae gravida nunc. Quisque vel leo lacus cras amet.</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.topnav</TypoScriptObjPath>
+				</tx_templavoila>
+			</topnav>
+			<nav type="array">
+				<tx_templavoila type="array">
+					<title>lib.nav</title>
+					<description>Horizontale Hauptnavigation</description>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.nav</TypoScriptObjPath>
+				</tx_templavoila>
+			</nav>
+			<search type="array">
+				<tx_templavoila type="array">
+					<title>lib.search</title>
+					<description>Suche-Formular</description>
+					<sample_data type="array">
+						<numIndex index="0">In aliquet vulputate arcu, ut bibendum nulla commodo ut. Maecenas sed.</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.search</TypoScriptObjPath>
+				</tx_templavoila>
+			</search>
+			<digicom type="array">
+				<tx_templavoila type="array">
+					<title>lib.digicom</title>
+					<description>Koordinaten von Digicom</description>
+					<sample_data type="array">
+						<numIndex index="0">Digicom digitale Medien AG</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.digicom</TypoScriptObjPath>
+				</tx_templavoila>
+			</digicom>
+			<col1_content_submenu type="array">
+				<tx_templavoila type="array">
+					<title>lib.col1_content_submenu</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.col1_content_submenu</TypoScriptObjPath>
+				</tx_templavoila>
+			</col1_content_submenu>
+			<col2_content_submenu type="array">
+				<tx_templavoila type="array">
+					<title>lib.col2_content_submenu</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.col2_content_submenu</TypoScriptObjPath>
+				</tx_templavoila>
+			</col2_content_submenu>
+			<col3_content_submenu type="array">
+				<tx_templavoila type="array">
+					<title>lib.col3_content_submenu</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.col3_content_submenu</TypoScriptObjPath>
+				</tx_templavoila>
+			</col3_content_submenu>
+			<libheader_style type="array">
+				<type>attr</type>
+				<tx_templavoila type="array">
+					<title>lib.header_style</title>
+					<sample_data type="array">
+						<numIndex index="0">background-image:test.jpg</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<TypoScriptObjPath>lib.header_style</TypoScriptObjPath>
+				</tx_templavoila>
+			</libheader_style>
+			<teaser_content type="array">
+				<tx_templavoila type="array">
+					<title>Teaser</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<TypoScript><![CDATA[
+	10= RECORDS
+	10.source.current=1
+	10.tables = tt_content
+	10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+                    ]]></TypoScript>
+					<oldStyleColumnNumber type="integer">5</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<label>Teaser</label>
+				</TCEforms>
+			</teaser_content>
+		</el>
+	</ROOT>
+</T3DataStructure>

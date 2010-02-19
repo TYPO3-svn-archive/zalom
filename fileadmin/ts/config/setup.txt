@@ -1,0 +1,46 @@
+# Globale Konfiguration fuer Website
+# Diese Werte werden auch mit 'cached' Seiten gespeichtert
+[PIDinRootline = 1]
+config {
+	# Lokalisierung für die Schweiz eingestellt
+	locale_all = de_CH.UTF-8
+	language = de
+	sys_language_uid = 0
+	
+	# E-Mail-Adressen werden kodiert; Zahl entspricht der Verschiebung der Zeichen
+	spamProtectEmailAddresses = 1
+
+	# Ersatzzeichen für @-Zeichen in E-Mail-Adressen
+	spamProtectEmailAddresses_atSubst = (at)
+
+	# DOCTYPE = XHTML 1.0 transitional
+	doctype = xhtml_trans
+
+	# Sprach-Attribut für <html>
+	htmlTag_langKey = de-CH
+
+	# Versucht die Ausgabe XHTML-konform umzuwandeln
+	# all = immer bevor die Seiten in den Cache wandern
+	xhtml_cleaning = all
+	
+	# kein XML-Prolog
+	xmlprologue = none
+
+	# entfernt Kommentare im HTML-Code
+	disablePrefixComment = 1
+	
+}
+[END]
+
+# Globale Konfiguration fuer Newsletter
+[PIDinRootline = 10300]
+config {
+	doctype = xhtml_strict
+	htmlTag_langKey = de-CH
+	xhtml_cleaning = all
+	xmlprologue = none
+	metaCharset = iso-8859-1
+	removeDefaultJS = 1
+	locale_all = de_CH
+}
+[END]

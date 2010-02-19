@@ -1,0 +1,2 @@
+# Standard-Konstanten einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:perfectlightbox/static/Perfect_Lightbox2/constants.txt">
