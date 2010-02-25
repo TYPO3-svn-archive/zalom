@@ -1,2 +1,7 @@
 # Standard-Konstanten einbinden
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/ext_typoscript_constants.txt">
+
+plugin.powermail.libraryToUse = mootools
+plugin.powermail.mandatory.symbol = &nbsp;*
+plugin.powermail.mandatory.wrap = <span class="powermail_mandatory mandatory_field">|</span>
+plugin.powermail.clear.session = 1

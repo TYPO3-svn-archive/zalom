@@ -1,14 +1,27 @@
-2010-02-23 Juerg Langhard  <juerg@digicom-medien.ch>
-	* Test 2 TYPO3 Subversion Digicom
+2010-02-23 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* EXT:felogin FILE:EXT:felogin/ext_typoscript_setup.txt in Setup einbinden
 	
-2010-02-21 Juerg Langhard  <juerg@digicom-medien.ch>
-	* Test 2 TYPO3 Subversion Digicom
-	
-2010-02-20 Juerg Langhard  <juerg@digicom-medien.ch>
-	* Test TYPO3 Subversion zuhause	
-	
-2010-02-19 Juerg Langhard  <juerg@digicom-medien.ch>
-	* Upload to TYPO3 Subversion	
+2010-02-22 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* EXT:felogin Im verschickten E-Mail ist keine Frist eingefuegt, wie lange der Link gueltig ist
+	  plugin.tx_felogin_pi1.dateFormat = d. M. Y, h:i muss gesetzt sein
+	* EXT:powermail Dem Mandatory-Zeichen '*'-Span die Klasse "mandatory_field" im TS hinzugefuegt
+	* EXT:powermail Wenn nach erfolgtem Absenden eines ausgefuellten Formulares dieses via Navigation wieder angezeigt wird, 
+	  sind die Felder nicht leer
+	  => Konstante plugin.powermail.clear.session = 1
+	* EXT:powermail JavaScript-Lib gewechselt auf mootools
+	* EXT:powermail Auch nicht ausgefuellte Felder werden in der Vorschau angezeigt => so gewuenscht
+	* Zusaetzliches favicon.ico in www-root kopiert
+	* EXT:sr_feuser_register Fehler in verschicktem Infomail: Textteil ist in <b>-wrap, welches aber sichtbar ausgegeben wird
+	  => Fehler in Uebersetzung /typo3conf/l10n/sr_email_subscribe/pi1/de.locallang.xml
+	* EXT:sr_feuser_register <dl>-Tag noch vorhanden in:
+	  <label for="tx-srfeuserregister-pi1-module_sys_dmail_category">Receive news on any of these subjects? </label>
+	  <input id="tx-srfeuserregister-pi1-module_sys_dmail_category" type="hidden" value="" name="FE[fe_users][module_sys_dmail_category]"/>
+	  <dl class="tx-srfeuserregister-pi1-multiple-checkboxes" title=""/>
+	  => Nicht in Templates auffindbar: belassen
+	* EXT:ve_guestbook Dem Mandatory-Zeichen '*'-Span im Template die Klasse "mandatory" hinzugefuegt
+	* Photoshop-Vorlage _nav_artwork.psd und nav-Bilder angepasst
 
 2010-02-17 Heinz Schilling <heinz@digicom-medien.ch>
 

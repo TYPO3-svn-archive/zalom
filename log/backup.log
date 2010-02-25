@@ -403,3 +403,44 @@ ZALOM-Backup: Thu Feb 18 00:00:01 CET 2010
 NO-Backup: Fri Feb 19 00:00:02 CET 2010
 --------------------------------------------------------------
 ../../log/backup.log
+
+NO-Backup: Sat Feb 20 00:00:01 CET 2010
+--------------------------------------------------------------
+../../log/backup.log
+
+NO-Backup: Sun Feb 21 00:00:01 CET 2010
+--------------------------------------------------------------
+../../log/backup.log
+
+NO-Backup: Mon Feb 22 00:00:01 CET 2010
+--------------------------------------------------------------
+../../log/backup.log
+
+ZALOM-Backup: Tue Feb 23 00:00:02 CET 2010
+--------------------------------------------------------------
+../../
+../../_ToDo.zalom
+../../fileadmin/ts/ext.felogin
+../../fileadmin/ts/ext.felogin/setup.txt
+../../fileadmin/ts/ext.powermail
+../../fileadmin/ts/ext.powermail/constants.txt
+../../log/backup.log
+../../_ChangeLog.zalom
+
+ZALOM-Backup: Wed Feb 24 00:00:03 CET 2010
+--------------------------------------------------------------
+../../
+../../_ToDo.zalom
+../../fileadmin/ts/ext.felogin
+../../fileadmin/ts/ext.felogin/setup.txt
+../../log/mysqldump.log
+../../log/backup.log
+../../resources/mysqldump
+../../resources/mysqldump/zalomDump.sql
+../../resources/documents
+../../resources/documents/install.zalom
+../../_ChangeLog.zalom
+
+NO-Backup: Thu Feb 25 00:00:01 CET 2010
+--------------------------------------------------------------
+../../log/backup.log

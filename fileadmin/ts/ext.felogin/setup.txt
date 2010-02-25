@@ -1,4 +1,7 @@
-plugin.tx_felogin_pi1{
+# Standard-Setup einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:felogin/ext_typoscript_setup.txt">
+
+plugin.tx_felogin_pi1 {
 	
 	# PID where the fe_user are stored
 	storagePid = 10001
@@ -47,5 +50,7 @@ plugin.tx_felogin_pi1{
 	replyTo = {$plugin.zalom.email_replyTo}
 	
 	feloginBaseURL = http://{$plugin.zalom.siteUrl}/
+	
+	dateFormat = d. M. Y, h:i
 	
 }
