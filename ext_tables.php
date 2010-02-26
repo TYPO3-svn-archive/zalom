@@ -74,8 +74,37 @@ t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.nl_header/', 'lib.nl_head
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.nl_header_link/', 'lib.nl_header_link');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.nl_unsubscribe/', 'lib.nl_unsubscribe');
 
+
 /** ********************************************************************************** 
- * ZALOM-Configuration (Im ExtensionsManager)
+ * Backen-Modul
+ ********************************************************************************** **/
+if (TYPO3_MODE === 'BE')	{
+	/**
+	* Registers a Backend Module
+	*/
+	Tx_Extbase_Utility_Extension::registerModule(
+		$_EXTKEY,
+		'web',					// Make module a submodule of 'web'
+		'tx_zalom_m1',			// Submodule key
+		'',						// Position
+		array(																			// An array holding the controller-action-combinations that are accessible
+			'Backend' => 'index',
+			),
+		array(
+			'access' => 'user,group',
+			'icon'   => 'EXT:zalom/ext_icon.gif',
+			'labels' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_mod.xml',
+		)
+	);
+
+	/**
+	 * Add labels for context sensitive help (CSH)
+	 */
+	//t3lib_extMgm::addLLrefForTCAdescr('_MOD_web_BlogExampleTxBlogexampleM1', 'EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_csh.xml');
+}
+
+/** ********************************************************************************** 
+ * ZALOM-Backend-EXT:Configuration (Im ExtensionsManager)
  ********************************************************************************** **/
 $ZalomConfig = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY]);
 $TCA['tt_content']['ctrl']['dividers2tabs'] = $ZalomConfig['dividers2tabs'];
