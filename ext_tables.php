@@ -2,6 +2,10 @@
 if (!defined ('TYPO3_MODE')) {
 	die ('Access denied.');
 }
+/** ********************************************************************************** 
+ * Backen-Modul
+ ********************************************************************************** **/
+t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/', 'Backend');
 
 /** ********************************************************************************** 
  * PAGE-Configuration
@@ -88,10 +92,10 @@ if (TYPO3_MODE === 'BE')	{
 		'tx_zalom_m1',			// Submodule key
 		'',						// Position
 		array(																			// An array holding the controller-action-combinations that are accessible
-			'Backend' => 'index',
+			'Manager' => 'index, extensions',
 			),
 		array(
-			'access' => 'user,group',
+			'access' => 'admin',
 			'icon'   => 'EXT:zalom/ext_icon.gif',
 			'labels' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_mod.xml',
 		)
