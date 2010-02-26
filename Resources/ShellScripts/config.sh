@@ -24,15 +24,15 @@ echo "Initial Config-File"
 
 	# Ueberpruefung in welcher Zeitspanne das Script nach aktualisierten Dateien suchen soll (1438min => 23h58min)
 	BACKUP_TIME_RANGE=-1438 							
-	BACKUP_STORAGE_REL=../backup
-	BACKUP_LOGFILE=$ZALOM_BASE/log/backup.log
-	BACKUP_TAR_EXCLUDE='--exclude=zalom/resources/backup'
+	BACKUP_STORAGE_REL=../Backups
+	BACKUP_LOGFILE=$ZALOM_BASE/Logs/backup.log
+	BACKUP_TAR_EXCLUDE='--exclude=zalom/Resources/Backups'
 	BACKUP_TAR_FILE=ZalomBackup_$(date +%d%m%y)_$(date +%H)h$(date +%M)min$(date +%S)sec.tar.gz
 	BACKUP_TAR_SOURCE=../../../zalom/
 
 # MysqlDump (mysqldump.php)
 # -------------------------------------------------
 
-	DUMP_STORAGE_ABS=$ZALOM_BASE/resources/mysqldump
+	DUMP_STORAGE_ABS=$ZALOM_BASE/Resources/MysqlDump
 	DUMP_FILE=zalomDump.sql
-	DUMP_LOGFILE=$ZALOM_BASE/log/mysqldump.log
+	DUMP_LOGFILE=$ZALOM_BASE/Logs/mysqldump.log
