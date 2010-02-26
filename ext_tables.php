@@ -65,6 +65,7 @@ t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.commerce/', 'ext.commerce
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.felogin/', 'ext.felogin');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_feuser_register/', 'ext.sr_feuser_register');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.cal/', 'ext.cal');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.tt_news/', 'ext.tt_news');
 
 // Newsletter
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_email_subscribe/', 'ext.sr_email_subscribe');
@@ -78,5 +79,5 @@ t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.nl_unsubscribe/', 'lib.nl
  ********************************************************************************** **/
 $ZalomConfig = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY]);
 $TCA['tt_content']['ctrl']['dividers2tabs'] = $ZalomConfig['dividers2tabs'];
-
+$TCA['tt_news']['ctrl']['dividers2tabs'] 	= $ZalomConfig['dividers2tabsNews'];
 ?>
