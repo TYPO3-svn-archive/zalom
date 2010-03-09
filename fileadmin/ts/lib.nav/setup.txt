@@ -17,7 +17,6 @@ lib.nav.10 {
 			expAll = 0
 			noBlur = 1
 			wrap = |
-			IProcFunc = user_IProc_dfn
 			NO = 1
 			NO.ATagTitle.field = abstract // description // subtitle
 			NO.wrapItemAndSub = <li>|</li>
