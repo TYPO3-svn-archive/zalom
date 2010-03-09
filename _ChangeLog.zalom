@@ -1,3 +1,7 @@
+2010-03-09 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* lib.nl_unsubscribe URL als Konstante eingefuegt
+
 2010-03-01 Heinz Schilling <heinz@digicom-medien.ch>
 
 	* lib.nav: Zeile IProcFunc = user_IProc_dfn entfernt; diese funktioniert nur, wenn eine zusätzliche php-Datei eingebunden wird
