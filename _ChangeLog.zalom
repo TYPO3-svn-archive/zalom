@@ -1,3 +1,7 @@
+2010-16-09 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* PageTitle before TemplateTitle mit config.pageTitleFirst = 1 integriert
+
 2010-03-09 Heinz Schilling <heinz@digicom-medien.ch>
 
 	* lib.nl_unsubscribe URL als Konstante eingefuegt
