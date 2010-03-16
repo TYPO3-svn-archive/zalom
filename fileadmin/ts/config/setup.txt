@@ -28,6 +28,10 @@ config {
 
 	# entfernt Kommentare im HTML-Code
 	disablePrefixComment = 1
+
+	# PageTitle before TemplateTitle
+	pageTitleFirst = 1
+	
 	
 }
 [END]
