@@ -32,7 +32,6 @@ config {
 	# PageTitle before TemplateTitle
 	pageTitleFirst = 1
 	
-	
 }
 [END]
 
