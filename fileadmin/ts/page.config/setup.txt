@@ -1,9 +1,0 @@
-# Konfiguration der Seite
-# Alle hier gesetzten Werte überschreiben Einträge im
-# Top-Level-Objekt "config"
-page.config {
-	# Lokalisierung für die Schweiz eingestellt
-	locale_all = de_CH.UTF-8
-	language = de
-	sys_language_uid = 0
-}
