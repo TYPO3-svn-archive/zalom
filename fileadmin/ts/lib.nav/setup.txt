@@ -1,4 +1,4 @@
-# lib.nav_main
+# lib.nav
 # Diese Konfiguration erzeugt die Hauptnavigation der Stufe 1
 #
 lib.nav = COA
@@ -6,10 +6,9 @@ lib.nav.10 = COA
 lib.nav.10 {
 	# Horizontales Menü: class="hlist"
 	# Vertikales Menü: class="vlist"
-	wrap = <a id="navigation" name="navigation"></a><div class="hlist"><ul>|</ul></div>
+	wrap = <div class="hlist"><ul>|</ul></div>
 	30 = HMENU
 	30 {
-		# stdWrap.prefixComment = 2|Output of lib.nav.10.30
 		wrap = |
 		entryLevel = 0
 		1 = TMENU
@@ -21,12 +20,10 @@ lib.nav.10 {
 			NO.ATagTitle.field = abstract // description // subtitle
 			NO.wrapItemAndSub = <li>|</li>
 			NO.stdWrap.htmlSpecialChars = 1
-			NO.linkWrap = |
 			NO.ATagBeforeWrap = 1
 			CUR < .NO
 			CUR = 1
 			CUR.wrapItemAndSub = <li class="nav_cur">|</li>
-			CUR.doNotLinkIt = 0
 			CUR.stdWrap.htmlSpecialChars = 1
 			ACT = 1
 			ACT < .CUR
