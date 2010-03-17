@@ -11,26 +11,21 @@ lib.submenu.10 {
 		1 {
 			expAll = 0
 			noBlur = 1
-			wrap = |
+			wrap = <ul class="vlist">|</ul>
 			NO = 1
 			NO.ATagTitle.field = abstract // description // subtitle
 			NO.wrapItemAndSub = <li>|</li>
 			NO.stdWrap.htmlSpecialChars = 1
-			NO.linkWrap = |
 			NO.ATagBeforeWrap = 1
-			CUR < .NO
 			CUR = 1
-			CUR.allWrap = <strong>|</strong>
+			CUR < .NO
 			CUR.wrapItemAndSub = <li class="nav_cur">|</li>
-			CUR.doNotLinkIt = 1
 			CUR.stdWrap.htmlSpecialChars = 1
 			ACT = 1
 			ACT < .CUR
 			IFSUB = 1
 			IFSUB < .NO
-			IFSUB.linkWrap = |
 		}
-		1.wrap = <ul class="vlist">|</ul>
 		2 < .1
 		2.wrap = <ul>|</ul>
 		3 < .1
