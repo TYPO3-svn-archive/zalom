@@ -20,7 +20,6 @@ lib.submenu.10 {
 			CUR = 1
 			CUR < .NO
 			CUR.wrapItemAndSub = <li class="nav_cur">|</li>
-			CUR.stdWrap.htmlSpecialChars = 1
 			ACT = 1
 			ACT < .CUR
 			IFSUB = 1
