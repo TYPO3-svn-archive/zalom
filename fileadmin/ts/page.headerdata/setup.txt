@@ -5,3 +5,20 @@ page.headerData.10 >
 # Perfect-Lightbox jQuery
 # -------------------------------------------------------------------------------------------------------------
 # page.headerData.20 = (Definiert in: EXT:zalom/fileadmin/ts/ext.perfectlightboxjquery/setup.txt)
+
+# JavaScript-Firebug
+# -------------------------------------------------------------------------------------------------------------
+# headerData mit dem entsprechenden JS ergänzen.
+[globalVar = GP:firebug = 1]
+
+	# linkVar definieren
+	config.linkVars = firebug
+
+	page.headerData.9999 = TEXT
+	page.headerData.9999.value(
+		<script type='text/javascript' src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>
+		<script type="text/javascript">
+		firebug.env.height = 200;
+		</script>
+	)
+[END]
