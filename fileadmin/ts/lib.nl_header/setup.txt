@@ -18,6 +18,7 @@ lib.nl_header {
     	# levelmedia: 0 
     	# => Definiert, dass die Ebene 20. und 30. lediglich auf der 
     	#	 untersten Newsletter-Page (uid=10300) geaendert werden koennen.		
+
     	20.file.import.data = levelmedia: 0
 		20.file.import.listNum = 1
 		20.offset = 0,0
