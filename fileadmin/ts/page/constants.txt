@@ -1,1 +1,0 @@
-page.shortcutIcon = EXT:zalom/resources/images/favicon.ico

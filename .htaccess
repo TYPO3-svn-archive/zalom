@@ -1,0 +1,5 @@
+Order deny,allow
+deny from all
+<Files "ext_icon.gif">
+allow from all
+</Files>

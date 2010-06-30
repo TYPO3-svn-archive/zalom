@@ -1,7 +1,0 @@
-#Steuert diverse Output-Einstellungen
-
-# Entfernt style-Attribut bei <blockquote>
-lib.parseFunc_RTE.externalBlocks.blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs =
-
-# Entfernt Klasse bodytext aus <p>
-lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.addAttributes.P.class >

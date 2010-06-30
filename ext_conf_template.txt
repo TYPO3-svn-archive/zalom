@@ -1,5 +1,0 @@
-# cat=basic//10; type=boolean; label=Display Tabs in Content-Elements:$TCA['tt_content']['ctrl']['dividers2tabs']
-dividers2tabs = 1
-
-# cat=basic//10; type=boolean; label=Display Tabs in Content-Elements:$TCA['tt_news']['ctrl']['dividers2tabs']
-dividers2tabsNews = 1

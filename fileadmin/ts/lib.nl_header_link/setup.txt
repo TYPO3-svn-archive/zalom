@@ -1,3 +1,0 @@
-# Destination der verlinkten Header-Grafik im Newsletter
-lib.nl_header_link = TEXT
-lib.nl_header_link.value = http://{$plugin.zalom.siteUrl}

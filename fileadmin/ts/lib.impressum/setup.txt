@@ -1,9 +1,0 @@
-# Generiert das Impressum-Symbol mit Link
-lib.impressum = COA
-lib.impressum {
-	10 = IMAGE
-	10 {
-		file = fileadmin/templates/images/digicom_weblink_black.png
-		wrap = <a href="http://www.digicom-medien.ch" target="_blank">|</a>
-	}
-}

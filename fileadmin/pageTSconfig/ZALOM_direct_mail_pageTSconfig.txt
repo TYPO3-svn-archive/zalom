@@ -1,2 +1,0 @@
-# pageTSconfig
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:zalom/fileadmin/pageTSconfig/direct_mail.txt">

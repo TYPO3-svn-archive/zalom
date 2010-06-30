@@ -1,9 +1,0 @@
-<f:layout name="default" />
-
-<f:section name="iconButtons">
-	<f:be.buttons.icon uri="{f:uri.action(action:'new')}" icon="savedok" title="Save" />
-</f:section>
-
-<f:section name="content">
-	index (debug: <f:debug>{debug}</f:debug>)
-</f:section>
