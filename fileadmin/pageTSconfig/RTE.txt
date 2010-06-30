@@ -1,0 +1,93 @@
+# Die CSS-Datei einbinden, welche den Inhalt darstellt, damit im RTE eine
+# richtige Vorschau stattfindet
+RTE.default.contentCSS = fileadmin/templates/css/screen/content.css
+
+# Safari baut zusätzliche <span> ein
+RTE.default {
+	#enableWordClean = 1
+	#removeTrailingBR = 1
+	#removeComments = 1
+	removeTags = span
+	#removeTagsAndContents = style,script
+}
+	
+# Reduce to the max
+# Diverse Formatierungen werden nicht zur Verfügung gestellt
+#
+# Alle möglichen Buttons
+# blockstylelabel, blockstyle, textstylelabel, textstyle, fontstyle, fontsize, formatblock, blockquote, 
+# insertparagraphbefore, insertparagraphafter, lefttoright, righttoleft, language, showlanguagemarks, 
+# left, center, right, justifyfull, orderedlist, unorderedlist, definitionlist, definitionitem, 
+# outdent, indent, formattext, bidioverride, big, bold, citation, code, definition, deletedtext, 
+# emphasis, insertedtext, italic, keyboard,  monospaced, quotation, sample, small, span, strikethrough, 
+# strong, subscript, superscript, underline, variable, textcolor, bgcolor, textindicator, emoticon, 
+# insertcharacter, line, link, unlink, image, table, user, acronym, findreplace, spellcheck, chMode, 
+# inserttag, removeformat, copy, cut, paste, undo, redo, showhelp, about, toggleborders, 
+# tableproperties, tablerestyle, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit, 
+# columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, 
+# cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
+RTE.default.hideButtons ( 
+	blockstylelabel, blockstyle,
+	textstylelabel, textstyle,
+	subscript, superscript,
+	chMode,
+	textindicator,
+	about
+)
+
+# Standard
+# p, h1, h2, h3, h4, h5, h6, pre, address, blockquote, div
+RTE.default.buttons.formatblock.removeItems (
+	h4, h5, h6, div
+)
+# Umbenennen von H1, H2, H3
+RTE.default.buttons.formatblock.items.h1.label = Überschrift gross
+RTE.default.buttons.formatblock.items.h2.label = Überschrift mittel
+RTE.default.buttons.formatblock.items.h3.label = Überschrift klein
+
+# Standard-Werte für Links entfernen
+RTE {
+	classesAnchor {
+		externalLink {
+			altText =
+			titleText =
+		}
+		externalLinkInNewWindow {
+			altText =
+			titleText =
+		}
+		internalLink {
+			altText =
+			titleText =
+		}
+		internalLinkInNewWindow {
+			altText =
+			titleText =
+		}
+		download {
+			altText =
+			titleText =
+		}
+		mail {
+			altText =
+			titleText =
+		}
+	}
+}
+
+# RTE.default.proc
+# ist ein Objekt, das die Konfiguration für die Transformation des Inhaltes zwischen RTE-Feld und Datenbank
+# beinhaltet. Die Konfigurationsoptionen gelten für alle in TYPO3 verwendbaren RTEs und werden über die Klasse
+# t3lib_parsehtml_proc gesteuert.
+#RTE.default.proc {
+#	# Inhalt => RTE
+#	HTMLparser_rte {
+#		# keine Attribute bei diesen Tags
+#		noAttrib = blockquote
+#	}
+#	# Inhalt => DB
+#	HTMLparser_db {
+#		# keine Attribute bei diesen Tags
+#		noAttrib = blockquote
+#	}
+#}

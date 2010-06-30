@@ -1,0 +1,10 @@
+page {
+    config.tx_m1_google_analytics {
+
+    	# Google-Account-ID (erhält man wenn die Domain eingetragen wird bei Google. Beispiel: UA-3836084-?)
+        account = {$page.config.tx_m1_google_analytics.account}
+
+        # Spezielle Ordner die zusätlich getrackt werden sollen.
+        trackDownloadsFrom = fileadmin,uploads
+    }
+}

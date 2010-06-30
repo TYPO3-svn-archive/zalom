@@ -1,0 +1,104 @@
+################################################################################################
+# SERVER: SOURCE (nine.ch)
+################################################################################################
+
+# Login (Nine.ch)
+# ---------------
+ssh digicomadmin@digicom.nine.ch (Passwort: InowWok1)
+
+# Kunde anlegen
+# -------------
+sudo add_hosting -d domain.ch
+
+# Datenblatt erstellen
+# --------------------
+
+# User wechseln
+# ----------------
+sudo /usr/local/sbin/nine-change-to-user zalomdev
+
+# Verzeichnis wechseln 
+# --------------------
+cd /home/usr/zalomdev/public_html/typo3/ext/zalom/resources/shell
+
+# DB-Dump erstellen
+# -----------------
+sh mysqldump.sh
+### ERRORMELDUNGEN ####
+# chmod: cannot access `/home/usr/zalomdev/public_html/typo3/ext/zalom/resources/mysqldump/zalomDump.sql': No such file or directory
+# rm: cannot remove `/home/usr/zalomdev/public_html/typo3/ext/zalom/resources/mysqldump/zalomDump.sql': No such file or directory
+
+
+# User "zalomdev" abmelden
+# ------------------------
+exit
+
+################################################################################################
+# SERVER: NEUE INSTALLATION
+################################################################################################
+
+# Wechseln zum neuen User
+# ----------------------------------
+sudo /usr/local/sbin/nine-change-to-user <username>
+
+# Wechseln ins html-Root
+# ----------------------
+cd public_html/
+
+# Install-Script holen bei der Zalom-Standardinstallation
+# -------------------------------------------------------
+wget -r -c ftp://zalomdev:JiHohov1@zalomdev.digicom.nine.ch/public_html/typo3/ext/zalom/resources/shell/getData.sh
+mv zalomdev.digicom.nine.ch/public_html/typo3/ext/zalom/resources/shell/getData.sh ./getData.sh
+
+wget -r -c ftp://zalomdev:JiHohov1@zalomdev.digicom.nine.ch/public_html/typo3/ext/zalom/resources/shell/config.sh
+mv zalomdev.digicom.nine.ch/public_html/typo3/ext/zalom/resources/shell/config.sh ./config.sh
+
+# Install-Script starten
+# ----------------------
+sh getData.sh
+
+	#----------------------------------------------------------------------------------------------#
+	# OPTION: Lokale Extensions INSTALLATION												START  #
+	#----------------------------------------------------------------------------------------------#
+	
+	wget -r -c ftp://zalomdev:JiHohov1@zalomdev.digicom.nine.ch/public_html/typo3/ext/zalom/resources/shell/getDataForLocalExtensionInstallation.sh
+	mv zalomdev.digicom.nine.ch/public_html/typo3/ext/zalom/resources/shell/getDataForLocalExtensionInstallation.sh ./getDataForLocalExtensionInstallation.sh
+	
+	# Install-Script starten
+	# ----------------------
+	sh getDataForLocalExtensionInstallation.sh
+	
+	#----------------------------------------------------------------------------------------------#
+	# OPTION: Lokale Extensions INSTALLATION						  						  END  #
+	#----------------------------------------------------------------------------------------------#
+
+# Aptana: FTP-Verbindung herstellen
+# ---------------------------------
+
+# localconf.php anpassen
+# ----------------------
+Inhalt von localconf_original.php in localconf.php kopieren
+
+> Anpassen von Benutzername und Passwort der DB
+> Anpassen des Installtool-Passwortes
+
+> Speichern von localconf.php
+
+# Install-Tool Starten
+# --------------------
+
+> Database Analyser
+  > typo3conf/zalomDump.sql (IMPORT)
+
+# TYPO3 starten
+# -------------
+
+> Cache loeschen
+
+# Aufraeumen !!!!
+----------------
+sh typo3/ext/zalom/resources/shell/clearInstallData.sh
+
+################################################################################################
+# FERTIG !!!! ;-))
+################################################################################################

@@ -1,0 +1,4 @@
+# Spam von ve_guestbook in separatem Sysfolder ablegen
+[PIDinRoot = 10100]
+plugin.wt_spamshield.pid = 10103
+[END]

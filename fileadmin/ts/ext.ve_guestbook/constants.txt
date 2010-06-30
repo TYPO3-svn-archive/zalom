@@ -1,0 +1,4 @@
+# Ausgelagertes Template einbinden
+plugin.tx_veguestbook_pi1 {
+    file.templateFile = fileadmin/ext/ve_guestbook/ve_guestbook.html
+}

@@ -1,0 +1,125 @@
+2010-03-01 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* lib.nav: Zeile IProcFunc = user_IProc_dfn entfernt; diese funktioniert nur, wenn eine zusätzliche php-Datei eingebunden wird
+	  und dementsprechen die CSS-Formatierungen angepasst werden
+
+2010-02-23 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* EXT:felogin FILE:EXT:felogin/ext_typoscript_setup.txt in Setup einbinden
+	
+2010-02-22 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* EXT:felogin Im verschickten E-Mail ist keine Frist eingefuegt, wie lange der Link gueltig ist
+	  plugin.tx_felogin_pi1.dateFormat = d. M. Y, h:i muss gesetzt sein
+	* EXT:powermail Dem Mandatory-Zeichen '*'-Span die Klasse "mandatory_field" im TS hinzugefuegt
+	* EXT:powermail Wenn nach erfolgtem Absenden eines ausgefuellten Formulares dieses via Navigation wieder angezeigt wird, 
+	  sind die Felder nicht leer
+	  => Konstante plugin.powermail.clear.session = 1
+	* EXT:powermail JavaScript-Lib gewechselt auf mootools
+	* EXT:powermail Auch nicht ausgefuellte Felder werden in der Vorschau angezeigt => so gewuenscht
+	* Zusaetzliches favicon.ico in www-root kopiert
+	* EXT:sr_feuser_register Fehler in verschicktem Infomail: Textteil ist in <b>-wrap, welches aber sichtbar ausgegeben wird
+	  => Fehler in Uebersetzung /typo3conf/l10n/sr_email_subscribe/pi1/de.locallang.xml
+	* EXT:sr_feuser_register <dl>-Tag noch vorhanden in:
+	  <label for="tx-srfeuserregister-pi1-module_sys_dmail_category">Receive news on any of these subjects? </label>
+	  <input id="tx-srfeuserregister-pi1-module_sys_dmail_category" type="hidden" value="" name="FE[fe_users][module_sys_dmail_category]"/>
+	  <dl class="tx-srfeuserregister-pi1-multiple-checkboxes" title=""/>
+	  => Nicht in Templates auffindbar: belassen
+	* EXT:ve_guestbook Dem Mandatory-Zeichen '*'-Span im Template die Klasse "mandatory" hinzugefuegt
+	* Photoshop-Vorlage _nav_artwork.psd und nav-Bilder angepasst
+
+2010-02-17 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* Empfaengername mit Umlaut wird in Outlook 2007 / Outlook Express falsch angezeigt
+	  - PIDinRootline = 10300 Ausgabe aller Seiten mit iso-8859-1
+	  - Konfigurationen aus ext.direct_mail in die jeweiligen Dateien verschoben: zB. config, tt_content
+	* BE-Konfigurationen editor fuerr Direct Mail, welche den Wizard vereinfachen
+	* powermail: Kontrollieren: Die globalen Konstanten sind im Setup statt in den Constants definiert
+	  => braucht keine Aenderungen
+
+2010-02-17 Juerg Langhard  <juerg@digicom-medien.ch>
+
+	* ext_tables.php: Integration von $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY] fuer die Konfiguration von ZALOM ueber den ExtensionManager
+	  - Definition von "Display Tabs in Content-Elements" -> $TCA['tt_content']['ctrl']['dividers2tabs']  
+	* File: ext/zalom/fileadmin/pageTSconfig/BE.txt erweitert mit der Beschriftung von TCEFORM.tt_content.colPos
+	* Content Slide fuer die restlichen Templates eingebaut.
+
+2010-02-16 Juerg Langhard  <juerg@digicom-medien.ch>
+
+	* Content Slide fuer ZALOM (base) Content-Bereiche eingebaut.
+
+2010-02-16 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* CSS / optische Fehler mit MouseOver nav korrigiert
+	* IE7 favicon funktioniert nicht -> Datei neu erstellt
+	* client denied by server configuration: /home/usr/zalomdev/public_html/typo3/ext/zalom/ext_icon.gif -> .htaccess angepasst
+	* lib.impressum hinzugefuegt; verlinkter Hinweis auf Digicom
+	* Inhaltsspalte immer auf 'Normal'; -> TemplaVoila geht seinen eigene Weg:
+	  - wenn nur ein einziges Feld mit Inhalten gefuellt wird, so bekommt dieses automatisch colPos = 0
+	  - jedes weitere erhaelt eine hoehere Nummer (dabei zaehlt die Reihenfolge in der XML-Datei)
+	* EXT: direct_mail: E-Mail-Links werden codiert mit (at) und JavaScript -> funktioniert ohne aenderung richtig
+
+2010-02-15 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* EXT:templavoila Mapping-Instruktionen fuer TO ZALOM (base) eingefuegt
+	* @import aus extensions.css fuer perfectlightboxjquery.css entfernt; diese Datei existiert nicht
+	* EXT:indexed_search Template ohne Tabellen eingebaut indexed_search_css_tmpl.html; CSS formatiert
+	* Volltext-Suche geht nicht mehr ueber Suchfeld in Kopfzeile: Fehler im TS => typolink.parameter = 10500
+
+2010-02-10 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* EXT commerce, graytree, moneylib entfernt
+	* EXT sr_freecap, rounded_corners entfernt
+	* fileadmin/templates/js entfernt
+	* fileadmin/templates/lib entfernt
+	* fileadmin/templates/css/screen Typos in den CSS-Dateien korrigiert
+	* fileadmin/ext nicht mehr benoetigte Dateien mit ---Prefix geloescht
+	* Formulare: Layout Umgestalten, dass graue Flaechen verschwinden
+	
+2010-02-?? Heinz Schilling <heinz@digicom-medien.ch>
+
+	* CSS Global-Steuerung: EXT und deren Templates so konfigurieren, dass das gesamte Layout ueber zentrale CSS gesteuert werden koennen
+	* EXT: powermail: Das Javascript hebt die Marker nicht auf: <!-- ###DIV_CLASS### -->powermail_mandatory_js<!-- ###DIV_CLASS### --> Dadurch lassen sich die Fehlermeldungen nicht CSS-formatieren
+	* error.log: [Mon Jan 25 14:51:38 2010] [error] [client 62.2.43.78] File does not exist: /home/usr/zalomdev/public_html/fileadmin/templates/yaml, referer: http://zalomdev.digicom.nine.ch/
+	* error.log: [Fri Jan 15 13:44:47 2010] [error] [client 62.2.43.78] File does not exist: /home/usr/zalomdev/public_html/fileadmin/ext/powermail/css/screen/powermail.html
+	* error.log: [Tue Jan 19 10:56:03 2010] [error] [client 62.2.43.78] File does not exist: /home/usr/zalomdev/public_html/typo3conf/ext/cal, referer: http://zalomdev.digicom.nine.ch/index.php?id=10700
+	* EXT: sr_feuser_register: Konstanten in ZALOM integrieren, dass im /fileadmin keine Anpassungen gemacht werden muessen
+	* Fehlermeldung (Logout) Warning: fopen(/home/usr/zalomdev/public_html/typo3temp/tx_date2cal/date2cal_cache.php) [function.fopen]: failed to open stream: No such file or directory in /home/usr/digicomadmin/Share/TYPO3/Source/typo3_src-4.2.10/t3lib/class.t3lib_div.php on line 2729
+	* EXT: direct_mail: Entscheid alle Clients unterstuetzen? => nur die wichtigsten
+	* EXT: direct_mail: Breite unter 600px ?
+	* EXT direct_mail: Templates anpassen fuer CSS Global-Steuerung
+	* EXT: direct_mail: PageTS / UserTS konfigurieren und RTE-Elemente ausblenden
+	* EXT: direct_mail: Header noch zuviel Auswahl: Normal, Layout 1-5, Hidden
+	* EXT: direct_mail: Im RTE sind noch ungestaltete Elemente einfuegbar. Entweder entfernen oder formatierten: Aufzaehlungen, Tabellen, Div. Header
+	* CSS Global-Steuerung: EXT sr_feuser_register: Templates anpassen fuer CSS Global-Steuerung
+	* Login resp. Re-Login-Fenster: Beim Re-Login ist die Positionierung des Inhalts zu weit rechts / unten
+	* EXT: wec_map: In Zalom integrieren
+	* Globale Konstanten: Konzept besprechen globale Konstanten fuer diverse EXT wie URL der Website; E-Mail-Adressen fuer Absender etc.
+	* Dateistruktur: umkopieren von Dateien: Templates, CSS, TS etc.
+	* CSS Global-Steuerung EXT ve_guestbook: Templates anpassen fuer CSS Global-Steuerung
+	* CSS Global-Steuerung EXT felogin: Templates anpassen fuer CSS Global-Steuerung
+	* CSS Global-Steuerung EXT powermail: Templates anpassen fuer CSS Global-Steuerung
+	* Dateistruktur: alle WAAS in ZALOM unbenennen
+	* sr_feuser_register: Template tx_srfeuserregister_pi1_css_tmpl.html ab Zeile 370 weiter bearbeiten
+	* sr_feuser_register: ###TCA_INPUT_gender### rendert Radio-Buttons; diese muessen noch Zeilenweise in <div> eingepackt werden
+	* sr_feuser_register: RADIO / CHECKBOX sind noch als <dl> gerendert
+
+2009-11-02 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* EXT cal hinzugefuegt.
+
+2009-10-21 Heinz Schilling <heinz@digicom-medien.ch>
+
+	* Alle waas in zalom umgewandelt. Pfade, Variablen etc. Dateien neu verteilt.
+	
+2009-09-22 Juerg Langhard  <juerg@digicom-medien.ch>
+
+	* ueberfluessige Files geloescht in /ts
+	
+2009-09-22 Juerg Langhard  <juerg@digicom-medien.ch>
+
+	* Anpassen der Filestruktur, sowie unterteilen von TSconfig und TS	
+
+2009-09-18 Juerg Langhard  <juerg@digicom-medien.ch>
+
+	* initial code generated with kickstarter

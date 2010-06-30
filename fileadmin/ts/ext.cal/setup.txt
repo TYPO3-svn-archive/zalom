@@ -1,0 +1,4 @@
+# Standard-Setup einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cal/static/ts/setup.txt">
+# Standard CSS-Styles einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cal/static/css/setup.txt">

@@ -1,0 +1,14 @@
+# ce.footer_content.slide
+
+ce.footer_content = CONTENT
+ce.footer_content{
+   table = tt_content
+   slide = -1
+   select {
+     where = colPos=4
+     andWhere = deleted=0
+     andWhere = hidden=0
+     orderBy = sorting
+   }
+   wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+}

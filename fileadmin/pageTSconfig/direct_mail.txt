@@ -1,0 +1,104 @@
+mod.web_modules.dmail.from_email=heinz@digicom-medien.ch
+mod.web_modules.dmail.from_name=Digicom digitale Medien AG
+mod.web_modules.dmail.replyto_email=juerg.langhard@digicom-medien.ch
+mod.web_modules.dmail.replyto_name=Digicom digitale Medien AG
+mod.web_modules.dmail.organisation=Digicom digitale Medien AG
+mod.web_modules.dmail.priority=3
+mod.web_modules.dmail.sendOptions=3
+mod.web_modules.dmail.includeMedia=0
+mod.web_modules.dmail.flowedFormat=0
+mod.web_modules.dmail.plainParams=&type=99
+mod.web_modules.dmail.use_domain=0
+mod.web_modules.dmail.quick_mail_encoding=quoted-printable
+mod.web_modules.dmail.direct_mail_encoding=quoted-printable
+#mod.web_modules.dmail.quick_mail_charset=iso-8859-1
+#mod.web_modules.dmail.direct_mail_charset=iso-8859-1
+mod.web_modules.dmail.quick_mail_charset=utf-8
+mod.web_modules.dmail.direct_mail_charset=utf-8
+mod.web_modules.dmail.use_rdct=0
+mod.web_modules.dmail.long_link_mode=0
+mod.web_modules.dmail.enable_jump_url=0
+mod.web_modules.dmail.enable_mailto_jump_url=0
+
+# Optionen für Inhalt abschalten
+TCEFORM.tt_content.header_layout.removeItems = 0,4,5,100
+TCEFORM.tt_content.header_layout.altLabels.1 = Überschrift gross
+TCEFORM.tt_content.header_layout.altLabels.2 = Überschrift mittel
+TCEFORM.tt_content.header_layout.altLabels.3 = Überschrift klein
+TCEFORM.tt_content.imageorient.removeItems = 0,1,2,8,9,10,17,18
+TCEFORM.tt_content.imageorient.disableNoMatchingValueElement = 1
+TCEFORM.tt_content.imagecaption.disabled = 1
+TCEFORM.tt_content.image_link.disabled = 1
+TCEFORM.tt_content.image_zoom.disabled = 1
+TCEFORM.tt_content.tx_perfectlightbox_slideshow.disabled = 1
+TCEFORM.tt_content.imagecols.disabled = 1
+TCEFORM.tt_content.imageborder.disabled = 1
+TCEFORM.tt_content.starttime.disabled = 1
+TCEFORM.tt_content.endtime.disabled = 1
+TCEFORM.tt_content.CType.removeItems = powermail_pi1
+
+# Safari baut zusätzliche <span> ein
+RTE.default {
+	removeTags = span
+}
+	
+# Reduce to the max
+# Diverse Formatierungen werden nicht zur Verfügung gestellt
+#
+# Alle möglichen Buttons
+# blockstylelabel, blockstyle, textstylelabel, textstyle, fontstyle, fontsize, formatblock, blockquote, 
+# insertparagraphbefore, insertparagraphafter, lefttoright, righttoleft, language, showlanguagemarks, 
+# left, center, right, justifyfull, orderedlist, unorderedlist, definitionlist, definitionitem, 
+# outdent, indent, formattext, bidioverride, big, bold, citation, code, definition, deletedtext, 
+# emphasis, insertedtext, italic, keyboard,  monospaced, quotation, sample, small, span, strikethrough, 
+# strong, subscript, superscript, underline, variable, textcolor, bgcolor, textindicator, emoticon, 
+# insertcharacter, line, link, unlink, image, table, user, acronym, findreplace, spellcheck, chMode, 
+# inserttag, removeformat, copy, cut, paste, undo, redo, showhelp, about, toggleborders, 
+# tableproperties, tablerestyle, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit, 
+# columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, 
+# cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
+RTE.default.hideButtons ( 
+	formatblock,
+	blockstylelabel, blockstyle,
+	textstylelabel, textstyle,
+	subscript, superscript,
+	chMode,
+	textindicator,
+	about,
+	table
+)
+
+# Standard
+# p, h1, h2, h3, h4, h5, h6, pre, address, blockquote, div
+RTE.default.buttons.formatblock.removeItems (
+	h1, h2, h3, h4, h5, h6, pre, address, blockquote, div
+)
+# Standard-Werte für Links entfernen
+RTE {
+	classesAnchor {
+		externalLink {
+			altText =
+			titleText =
+		}
+		externalLinkInNewWindow {
+			altText =
+			titleText =
+		}
+		internalLink {
+			altText =
+			titleText =
+		}
+		internalLinkInNewWindow {
+			altText =
+			titleText =
+		}
+		download {
+			altText =
+			titleText =
+		}
+		mail {
+			altText =
+			titleText =
+		}
+	}
+}

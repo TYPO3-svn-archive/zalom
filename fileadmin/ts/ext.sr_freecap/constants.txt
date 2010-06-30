@@ -1,0 +1,12 @@
+# EXT: sr_freecap
+# Konfigurieren, damit die Bilder besser lesebar werden
+plugin.tx_srfreecap {
+#	imageHeight = 70
+#	textColor = 0
+#	fontFiles = uploads/tx_srfreecap/GDfont_92f06d183e.gdf
+	morphFactor = 0.2
+#	backgroundType = Transparent
+	backgroundType = White with grid
+	mergeWithBackground = 0
+#	backgroundMorph = 0
+}

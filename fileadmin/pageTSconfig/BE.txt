@@ -1,0 +1,20 @@
+# Diverse Einstellungsmoeglichkeiten im Backend BE werden nicht zur Verfuegung
+# gestellt, da deren Ausgabe auch nicht formatiert ist
+
+# Optionen fuer Inhalt abschalten
+TCEFORM.tt_content.header_layout.removeItems = 0,4,5,100
+TCEFORM.tt_content.header_layout.altLabels.1 = &Uuml;berschrift gross
+TCEFORM.tt_content.header_layout.altLabels.2 = &Uuml;berschrift mittel
+TCEFORM.tt_content.header_layout.altLabels.3 = &Uuml;berschrift klein
+TCEFORM.tt_content.date.disabled = 1
+
+# Beschriftung der verwendeten Position (Columns, Spalte) eines Content-Elements
+TCEFORM.tt_content.colPos.altLabels.0 = Kopfzeile
+TCEFORM.tt_content.colPos.altLabels.1 = Inhalt linke Spalte
+TCEFORM.tt_content.colPos.altLabels.2 = Inhalt mittlere Spalte
+TCEFORM.tt_content.colPos.altLabels.3 = Inhalt rechte Spalte
+# Hinzufuegen von zwei weiteren Positionsanzeigen
+TCEFORM.tt_content.colPos.addItems.4 = Fusszeile
+TCEFORM.tt_content.colPos.addItems.5 = Teaser
+
+#TCE.tt_content.ctrl.dividers2tabs = 1 

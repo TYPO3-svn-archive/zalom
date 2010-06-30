@@ -1,0 +1,42 @@
+# lib.topnav
+# Diese Konfiguration erzeugt die Nebennavigation für Spezialseiten
+#
+lib.topnav = COA
+lib.topnav.10 = COA
+lib.topnav.10 {
+	wrap = <ul>|</ul>
+	30 = HMENU
+	30 {
+		# stdWrap.prefixComment = 2|Output of lib.topnav.10.30
+		wrap = |
+		special = list
+		special.value = 24,27,28
+
+		1 = TMENU
+		1 {
+			expAll = 0
+			noBlur = 1
+			wrap = |
+			NO = 1
+			NO.ATagTitle.field = abstract // description // subtitle
+			NO.wrapItemAndSub = <li>|</li>
+			NO.stdWrap.htmlSpecialChars = 1
+			NO.linkWrap = |
+			NO.ATagBeforeWrap = 1
+			CUR < .NO
+			CUR = 1
+			CUR.wrapItemAndSub = <li>|</li>
+			CUR.doNotLinkIt = 1
+			CUR.stdWrap.htmlSpecialChars = 1
+			IFSUB = 1
+			IFSUB < .NO
+			IFSUB.linkWrap = |
+		}
+		# 2 < .1
+		# 2.wrap = <ul>|</ul>
+		#3 < .1
+		#3.wrap = <ul>|</ul>
+		#4 < .1
+		#4.wrap = <ul>|</ul>
+	}
+}

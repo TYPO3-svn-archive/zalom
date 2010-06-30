@@ -1,0 +1,3 @@
+styles.content.imgtext.maxWInText = 0
+styles.content.imgtext.linkWrap.width = 800
+styles.content.loginform.pid = 10001

@@ -1,0 +1,7 @@
+# Standard-Konstanten einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:direct_mail/static/plaintext/constants.txt">
+
+# Zalom-Konfigurationen
+# DIESE BEIDEN ZEILEN GREIFEN NICHT ??????
+#plugin.tx_directmail_pi1.siteUrl = {$plugin.zalom.siteUrl}
+plugin.tx_directmail_pi1.siteUrl = http://{$plugin.zalom.siteUrl}/

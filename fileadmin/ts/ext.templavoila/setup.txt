@@ -1,0 +1,15 @@
+# ext.templavoila
+
+temp.ce = RECORDS
+temp.ce {
+	source.current=1
+	tables = tt_content
+	wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+}
+
+ce.header_content 		< temp.ce
+ce.teaser_content 		< temp.ce
+ce.col1_content_content < temp.ce
+ce.col3_content_content < temp.ce
+ce.col2_content_content < temp.ce
+ce.footer_content 		< temp.ce              
