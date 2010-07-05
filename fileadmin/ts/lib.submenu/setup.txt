@@ -34,6 +34,8 @@ lib.submenu.10 {
 	}
 }
 
-lib.col1_content_submenu < lib.submenu
-lib.col2_content_submenu < lib.submenu
-lib.col3_content_submenu < lib.submenu
+# Diese Konfiguration nicht mehr global einstellen
+# siehe /fileadmin/ts/lib.submenu.setup.txt
+#lib.col1_content_submenu < lib.submenu
+#lib.col2_content_submenu < lib.submenu
+#lib.col3_content_submenu < lib.submenu
