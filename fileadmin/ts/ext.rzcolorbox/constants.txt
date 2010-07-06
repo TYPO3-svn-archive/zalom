@@ -1,0 +1,7 @@
+# Standard-Konstanten einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rzcolorbox/static/t3jquery/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rzcolorbox/static/style1/constants.txt">
+
+plugin.rzcolorbox {
+	lllPath = typo3/ext/rzcolorbox/locallang.xml
+}

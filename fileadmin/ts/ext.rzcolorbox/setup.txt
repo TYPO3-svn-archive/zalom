@@ -1,0 +1,16 @@
+# Standard-Setup einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rzcolorbox/static/t3jquery/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rzcolorbox/static/style1/setup.txt">
+
+page.1442 { 
+	20.jsfile.dataWrap = typo3/ext/rzcolorbox/res/js/jquery.colorbox.js
+}
+
+page.headerData.1441.1.value (
+ 
+	<link type="text/css" media="screen" rel="stylesheet" href="typo3/ext/rzcolorbox/res/style1/css/colorbox.css" />
+)
+
+[browser = msie]
+	includeLibs.tx_rzcolorbox_t3jquery = typo3/ext/rzcolorbox/lib/class.tx_rzcolorbox_css.php
+[END]            
