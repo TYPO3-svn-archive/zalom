@@ -1,0 +1,33 @@
+# Standard-Setup einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wec_map/static/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wec_map/pi1/static/setup.txt">
+
+# Standard-Konfiguration ZALOM
+plugin.tx_wecmap_pi1 {
+	height = 400
+	width = 400
+	showDirections = 1
+	prefillAddress = 0
+	initialMapType = G_SATELLITE_MAP
+	controls.mapControlSize = large
+	controls.showOverviewMap = 1
+	controls.showMapType = 1
+	controls.showScale = 1
+#	markers.1 {
+#				title = TS title
+#				description = TS desc
+#				street = 1234 Happy Place
+#				city = Happy City
+#				zip = 12345
+#				state = HS
+#				country = Happy Country
+#	}
+#	markers.2 {
+#		title = Another title
+#		description = Another description
+#		address = 1234 Another Happy Ave, Happy City, HS 12347, Happy Country
+#	}
+#	markers.3 {
+#		#add another marker here
+#	}
+}

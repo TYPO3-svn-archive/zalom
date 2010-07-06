@@ -66,6 +66,7 @@ t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.felogin/', 'ext.felogin')
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_feuser_register/', 'ext.sr_feuser_register');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.cal/', 'ext.cal');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.tt_news/', 'ext.tt_news');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.wec_map/', 'ext.wec_map');
 
 // Newsletter
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_email_subscribe/', 'ext.sr_email_subscribe');
