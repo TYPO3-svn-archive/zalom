@@ -47,3 +47,25 @@ config {
 	locale_all = de_CH
 }
 [END]
+
+config {
+	headerComment (
+
+
+        ******************************************************************************************************
+
+		Digicom Digitale Medien AG
+		Im Ifang 10
+		CH-8307 Effretikon
+	
+		Telefon +41 52-355 33 88
+		Fax +41 52-355 33 99
+
+		www.digicom-medien.ch
+		info(at)digicom-medien.ch
+
+
+        ******************************************************************************************************
+
+	)
+}
