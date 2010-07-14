@@ -2,6 +2,9 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:direct_mail/static/plaintext/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:direct_mail/static/boundaries/setup.txt">
 
+# ZALOM
+tx_directmail_pi1.10.template.file = {$plugin.alt.plaintext.file.template}
+
 # Weitere Konfigurationen fuer den Newsletter in
 #	config
 #	lib.stdheader

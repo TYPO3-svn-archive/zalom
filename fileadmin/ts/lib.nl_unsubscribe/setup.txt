@@ -1,11 +1,13 @@
 lib.nl_unsubscribe = COA
 lib.nl_unsubscribe {
 	10 = TEXT
-	10.value = <p><a href="http://{$plugin.zalom.siteUrl}/index.php?id=
+	10.value = <p><a href="{$plugin.zalom.siteUrl}index.php?id=
 	11 = TEXT
 	11.data = TSFE:id
 	12 = TEXT
 	12.value = ">[ Falls der Newsletter nicht korrekt dargestellt wird, klicken Sie hier. ]</a><br />
 	20 = TEXT
-	20.value = <a href="http://{$plugin.zalom.siteUrl}/index.php?id=10301&tx_sremailsubscribe_pi1[cmd]=infomail" >[ Den Newsletter abbestellen können Sie hier. ]</a></p>
+	20.value = <a href="{$plugin.zalom.siteUrl}index.php?id=10301&tx_sremailsubscribe_pi1[cmd]=infomail" >[ Den Newsletter abbestellen können Sie hier. ]</a>
+	30 = TEXT
+	30.value = <img src="typo3/ext/direct_mail/res/gfx/dmailerping.gif" width="1" height="1" dmailerping="1" /></p>
 }
