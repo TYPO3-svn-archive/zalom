@@ -8,9 +8,7 @@ if (!defined ('TYPO3_MODE')) {
  ********************************************************************************** **/
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/config/', 'config');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/page/', 'page');
-//t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/page.config/', 'page.config');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/page.headerdata/', 'page.headerData');
-t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/page.config.headercomment/', 'page.config.headerComment');
 // Style-Content
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/style.content/', 'style.content');
 // CSS to TS
@@ -72,6 +70,8 @@ t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.rzcolorbox/', 'ext.rzcolo
 // Newsletter
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_email_subscribe/', 'ext.sr_email_subscribe');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.direct_mail/', 'ext.direct_mail');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/plugin.alt.plaintext/', 'plugin.alt.plaintext');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.nl_show_page/', 'lib.nl_show_page');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.nl_header/', 'lib.nl_header');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.nl_header_link/', 'lib.nl_header_link');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.nl_unsubscribe/', 'lib.nl_unsubscribe');
