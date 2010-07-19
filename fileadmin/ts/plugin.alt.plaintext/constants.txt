@@ -1,0 +1,3 @@
+# Zalom-Konfigurationen
+plugin.alt.plaintext.siteUrl = {$plugin.zalom.siteUrl}
+plugin.alt.plaintext.file.template = fileadmin/ext/direct_mail/tx_directmail_pi1_plaintext.tmpl
