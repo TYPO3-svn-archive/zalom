@@ -17,7 +17,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'author' => 'Juerg Langhard',
 	'author_email' => 'juerg@digicom-medien.ch',
 	'shy' => '',
-	'dependencies' => 't3jquery',
+	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
 	'module' => '',
@@ -29,10 +29,9 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author_company' => 'Digicom digitale Medien AG',
-	'version' => '0.2.6',
+	'version' => '0.2.7',
 	'constraints' => array(
 		'depends' => array(
-			't3jquery' => ''
 		),
 		'conflicts' => array(
 		),
