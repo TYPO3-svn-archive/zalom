@@ -1,4 +1,0 @@
-
-plugin.tx_srfreecap_pi1.siteTagDomain = {$plugin.zalom.siteUrl}
-
-plugin.tx_srfreecap_pi2._CSS_DEFAULT_STYLE >
