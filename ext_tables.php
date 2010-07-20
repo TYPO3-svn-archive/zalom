@@ -51,12 +51,9 @@ t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.search/', 'lib.search');
 /** ********************************************************************************** 
  * EXT-Configuration
  ********************************************************************************** **/
-t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.perfectlightboxjquery/', 'ext.perfectlightboxjquery (obsolete)');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.indexed_search/', 'ext.indexed_search');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.m1_google_analytics/', 'ext.m1_google_analytics');
-t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.perfectlightbox/', 'ext.perfectlightbox (obsolete)');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.powermail/', 'ext.powermail');
-t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_freecap/', 'ext.sr_freecap');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.ve_guestbook/', 'ext.ve_guestbook');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.wt_spamshield/', 'ext.wt_spamshield');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.commerce/', 'ext.commerce');
