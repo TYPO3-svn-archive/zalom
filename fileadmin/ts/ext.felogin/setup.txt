@@ -49,7 +49,7 @@ plugin.tx_felogin_pi1 {
 	email_fromName = {$plugin.zalom.email_fromName}
 	replyTo = {$plugin.zalom.email_replyTo}
 	
-	feloginBaseURL = http://{$plugin.zalom.siteUrl}/
+	feloginBaseURL = {$plugin.zalom.siteUrl}
 	
 	dateFormat = d. M. Y, h:i
 	
