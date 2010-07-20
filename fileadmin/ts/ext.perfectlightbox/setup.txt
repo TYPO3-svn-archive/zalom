@@ -1,2 +1,0 @@
-# Standard-Setup einbinden
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:perfectlightbox/static/Perfect_Lightbox2/setup.txt">
