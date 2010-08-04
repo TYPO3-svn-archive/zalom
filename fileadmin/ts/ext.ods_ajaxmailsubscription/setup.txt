@@ -1,0 +1,20 @@
+plugin.tx_odsajaxmailsubscription_pi1 {
+	default_group =
+	default_type = 1
+	mail_from = info@###DOMAIN###
+	mail_notify =
+	mail_reply =
+	mail_return =
+	page_edit =
+	page_records =
+	page_redirect_unsubscribe =
+	show_default =
+	template = fileadmin/ext/ods_ajaxmailsubscription/ajaxmailsubscription.tmpl
+	mail_subscribe_subject =
+	mail_subscribe_body =
+	mail_unsubscribe_subject =
+	mail_unsubscribe_body =
+
+	authcode_fields = uid
+	default_table = tt_address
+}
