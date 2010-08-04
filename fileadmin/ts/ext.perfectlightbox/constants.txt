@@ -1,0 +1,7 @@
+# Standard-Konstanten einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:perfectlightbox/static/constants.txt">
+
+plugin.perfectlightbox.libraryToUse = jquery
+plugin.perfectlightbox.includeJSLibrarys = 0
+plugin.perfectlightbox.slideshowAutoplay = true
+plugin.perfectlightbox.slideshowInterval = 4000
