@@ -5,3 +5,7 @@
 plugin.rzcolorbox {
 	lllPath = typo3/ext/rzcolorbox/locallang.xml
 }
+plugin.rzcolorbox {
+	useWidth = 1
+	innerHeight = 400px
+}
