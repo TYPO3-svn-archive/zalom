@@ -8,7 +8,9 @@ if (!defined ('TYPO3_MODE')) {
  ********************************************************************************** **/
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/config/', 'config');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/page/', 'page');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/page.config/', '(OBS) page.config');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/page.headerdata/', 'page.headerData');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/page.config.headercomment/', '(OBS) page.config.headerComment');
 // Style-Content
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/style.content/', 'style.content');
 // CSS to TS
@@ -51,21 +53,25 @@ t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.search/', 'lib.search');
 /** ********************************************************************************** 
  * EXT-Configuration
  ********************************************************************************** **/
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.perfectlightboxjquery/', '(OBS) ext.perfectlightboxjquery');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.indexed_search/', 'ext.indexed_search');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.m1_google_analytics/', 'ext.m1_google_analytics');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.perfectlightbox/', 'ext.perfectlightbox');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.powermail/', 'ext.powermail');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_freecap/', '(OBS) ext.sr_freecap');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.ve_guestbook/', 'ext.ve_guestbook');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.wt_spamshield/', 'ext.wt_spamshield');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.commerce/', 'ext.commerce');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.felogin/', 'ext.felogin');
-t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_feuser_register/', 'ext.sr_feuser_register');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_feuser_register/', '(OBS) ext.sr_feuser_register');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.cal/', 'ext.cal');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.tt_news/', 'ext.tt_news');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.wec_map/', 'ext.wec_map');
-t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.rzcolorbox/', 'ext.rzcolorbox');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.rzcolorbox/', '(OBS) ext.rzcolorbox');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.ods_ajaxmailsubscription/', 'ext.ods_ajaxmailsubscription');
 
 // Newsletter
-t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_email_subscribe/', 'ext.sr_email_subscribe');
+t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.sr_email_subscribe/', '(OBS) ext.sr_email_subscribe');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/ext.direct_mail/', 'ext.direct_mail');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/plugin.alt.plaintext/', 'plugin.alt.plaintext');
 t3lib_extMgm::addStaticFile($_EXTKEY,'fileadmin/ts/lib.nl_show_page/', 'lib.nl_show_page');
