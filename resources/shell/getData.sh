@@ -18,7 +18,7 @@ mv $ZALOM_FTP_URL/$ZALOM_FTP_WWWROOT/* ./
 cp original_typo3conf/localconf.php typo3conf/localconf.php
 
 # mysql-Dump kopieren
-cp typo3/ext/zalom/resources/mysqldump/$DUMP_FILE typo3conf/$DUMP_FILE
+cp typo3conf/ext/zalom/resources/mysqldump/$DUMP_FILE typo3conf/$DUMP_FILE
  
 rm -r $ZALOM_FTP_URL
 rm typo3conf/temp_CACHED_*.php

@@ -5,8 +5,8 @@ echo "Initial Config-File"
 # Main-Config
 # -------------------------------------------------
 
-	CONFIG_VERSION='0.0.1'
-	ZALOM_BASE=/home/usr/zalomdev/public_html/typo3/ext/zalom
+	CONFIG_VERSION='0.0.2'
+	ZALOM_BASE=/home/usr/zalomdev/public_html/typo3conf/ext/zalom
 	
 	# Database
 	ZALOM_DB_NAME=zalomdev
