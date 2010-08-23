@@ -12,4 +12,6 @@ ce.teaser_content 		< temp.ce
 ce.col1_content_content < temp.ce
 ce.col3_content_content < temp.ce
 ce.col2_content_content < temp.ce
-ce.footer_content 		< temp.ce              
+ce.footer_content 		< temp.ce
+
+plugin.tx_templavoila_pi1.disableExplosivePreview = 1
