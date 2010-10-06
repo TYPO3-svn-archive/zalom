@@ -3,8 +3,9 @@
 page = PAGE
 page{
 	typeNum = 0
+	shortcutIcon = {$page.shortcutIcon}
 	10 = USER
 	10.userFunc = tx_templavoila_pi1->main_page
 	10.disableExplosivePreview = 1
-	shortcutIcon = {$page.shortcutIcon}
+	10.advancedHeaderInclusion= 1
 }
