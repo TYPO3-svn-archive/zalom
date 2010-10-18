@@ -1,5 +1,0 @@
-# Standard-Setup einbinden
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sr_email_subscribe/static/css_styled/setup.txt">
-
-plugin.tx_sremailsubscribe_pi1._CSS_DEFAULT_STYLE >
-plugin.tx_sremailsubscribe_pi1.displayRequired.wrap = <span class="mandatory_field">|</span>
