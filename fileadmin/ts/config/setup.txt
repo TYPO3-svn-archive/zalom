@@ -31,6 +31,15 @@ config {
 	
 	# PageTitle before TemplateTitle
 	pageTitleFirst = 1
+
+	# Indexierung des Contents erlauben (=1)
+	index_enable = 1
+
+	# Externe Seiten indexieren (=1)
+	index_externals = 0
+
+	# Metatags indexieren (=1)
+	index_metatags = 1
 }
 [END]
 

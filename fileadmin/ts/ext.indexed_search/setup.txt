@@ -1,12 +1,3 @@
-# Indexierung des Contents erlauben (=1)
-config.index_enable = 1
-
-# Externe Seiten indexieren (=1)
-config.index_externals = 0
-
-# Metatags indexieren (=1)
-config.index_metatags = 1
-
 plugin.tx_indexedsearch {
 #	templateFile = EXT:zalom/fileadmin/ext/indexed_search/indexed_search.html
 	templateFile = fileadmin/ext/indexed_search/indexed_search_css_tmpl.html
