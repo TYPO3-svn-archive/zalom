@@ -1,5 +1,4 @@
-# Diese Konfiguration bindet templavoila in die Seite ein
-# und setzt type=0
+# Diese Konfiguration bindet templavoila in die Seite ein und setzt type=0
 page = PAGE
 page {
 	typeNum = 0
@@ -9,6 +8,14 @@ page {
 	10.disableExplosivePreview = 1
 	10.advancedHeaderInclusion= 1
 
+	config {
+		tx_m1_google_analytics {
+			# Google-Account-ID (erhält man, wenn die Domain eingetragen wird bei Google)
+			account = {$plugin.zalom.googleAnalyticsId}
+			# Spezielle Ordner die zusätzlich getrackt werden sollen.
+			trackDownloadsFrom = fileadmin,uploads
+		}
+	}
 	meta {
 		keywords.field = keywords
 		keywords.ifEmpty = {$plugin.zalom.metaKeywords}
