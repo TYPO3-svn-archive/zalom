@@ -2,12 +2,12 @@
 # richtige Vorschau stattfindet
 RTE.default.contentCSS = fileadmin/templates/css/screen/content.css
 
-# Safari baut zusätzliche <span> ein
+# Safari baut zusätzliche <span> und <div> ein
 RTE.default {
 	#enableWordClean = 1
 	#removeTrailingBR = 1
 	#removeComments = 1
-	removeTags = span
+	removeTags = span,div
 	#removeTagsAndContents = style,script
 }
 	
@@ -41,9 +41,9 @@ RTE.default.buttons.formatblock.removeItems (
 	h4, h5, h6, div
 )
 # Umbenennen von H1, H2, H3
-RTE.default.buttons.formatblock.items.h1.label = Überschrift gross
-RTE.default.buttons.formatblock.items.h2.label = Überschrift mittel
-RTE.default.buttons.formatblock.items.h3.label = Überschrift klein
+RTE.default.buttons.formatblock.items.h1.label = Überschrift 1 (gross)
+RTE.default.buttons.formatblock.items.h2.label = Überschrift 2 (mittel)
+RTE.default.buttons.formatblock.items.h3.label = Überschrift 3 (klein)
 
 # Standard-Werte für Links entfernen
 RTE {
@@ -74,6 +74,13 @@ RTE {
 		}
 	}
 }
+
+# Link-Wizard: Popup-Fenster nicht waehlbar
+RTE.default.buttons.link.popupSelector.disabled = 1
+
+# Link-Wizard: Kein Stil (CSS-Klasse) waehlbar
+RTE.default.classesAnchor >
+RTE.default.classesLinks >
 
 # RTE.default.proc
 # ist ein Objekt, das die Konfiguration für die Transformation des Inhaltes zwischen RTE-Feld und Datenbank

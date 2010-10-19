@@ -57,6 +57,9 @@ config {
 }
 [END]
 
+config.intTarget = 
+config.extTarget = _blank
+
 config {
 	headerComment (
 
