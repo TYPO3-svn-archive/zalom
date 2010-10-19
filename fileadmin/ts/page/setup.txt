@@ -1,11 +1,21 @@
 # Diese Konfiguration bindet templavoila in die Seite ein
 # und setzt type=0
 page = PAGE
-page{
+page {
 	typeNum = 0
 	shortcutIcon = {$page.shortcutIcon}
 	10 = USER
 	10.userFunc = tx_templavoila_pi1->main_page
 	10.disableExplosivePreview = 1
 	10.advancedHeaderInclusion= 1
+
+	meta {
+		keywords.field = keywords
+		keywords.ifEmpty = {$plugin.zalom.metaKeywords}
+		description.field = description
+		description.ifEmpty = {$plugin.zalom.metaDescription}
+		author.field = author
+		author.ifEmpty = {$plugin.zalom.metaAuthor}
+		robots = index,follow
+	} 
 }
