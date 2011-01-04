@@ -8,6 +8,9 @@ options.pageTree.showPageIdWithTitle = 1
 # Erlaubt den File-Upload über das Link-Pop-Up
 options.uploadFieldsInTopOfEB = 1
 
+# Damit wird im Seitenbaum statt des Seitentitels der Navigationstitel angezeigt.
+options.pageTree.showNavTitle = 1
+
 # Header (Inhaltselement) auf Typ2 setzen
 TCAdefaults.tt_content.header_layout = 2
 

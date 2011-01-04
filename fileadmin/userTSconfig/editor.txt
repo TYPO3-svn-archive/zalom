@@ -9,6 +9,9 @@ options.uploadFieldsInTopOfEB = 1
 # enable create-folder-field in rte
 options.createFoldersInEB =1
 
+# Damit wird im Seitenbaum statt des Seitentitels der Navigationstitel angezeigt.
+options.pageTree.showNavTitle = 1
+
 mod.web_txtemplavoilaM1.enableDeleteIconForLocalElements = 2
 
 # config the Direct Mail Wizard
