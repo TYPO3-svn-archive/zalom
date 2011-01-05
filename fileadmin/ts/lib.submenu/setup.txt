@@ -9,7 +9,7 @@ lib.submenu.10 {
 		entryLevel = 1
 		1 = TMENU
 		1 {
-			expAll = 0
+			expAll = 1
 			noBlur = 1
 			wrap = <ul class="vlist">|</ul>
 			NO = 1
@@ -19,11 +19,9 @@ lib.submenu.10 {
 			NO.ATagBeforeWrap = 1
 			CUR = 1
 			CUR < .NO
-			CUR.wrapItemAndSub = <li class="nav_cur">|</li>
-			ACT = 1
-			ACT < .CUR
-			IFSUB = 1
-			IFSUB < .NO
+			CUR.wrapItemAndSub = <li class="active">|</li>
+			CUR.doNotLinkIt = 1
+			CUR.allWrap = <strong>|</strong>
 		}
 		2 < .1
 		2.wrap = <ul>|</ul>
@@ -33,9 +31,3 @@ lib.submenu.10 {
 		4.wrap = <ul>|</ul>
 	}
 }
-
-# Diese Konfiguration nicht mehr global einstellen
-# siehe /fileadmin/ts/lib.submenu.setup.txt
-#lib.col1_content_submenu < lib.submenu
-#lib.col2_content_submenu < lib.submenu
-#lib.col3_content_submenu < lib.submenu
