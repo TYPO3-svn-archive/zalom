@@ -6,32 +6,17 @@
 # ---------------
 ssh digicomadmin@digicom.nine.ch (Passwort: InowWok1)
 
-# Kunde anlegen
-# -------------
+# Hosting anlegen
+# ---------------
 sudo add_hosting -d domain.ch
 
 # Datenblatt erstellen
 # --------------------
 
-# User wechseln
-# ----------------
-sudo /usr/local/sbin/nine-change-to-user zalomdev
-
-# Verzeichnis wechseln 
-# --------------------
-cd /home/usr/zalomdev/public_html/typo3conf/ext/zalom/resources/shell
-
-# DB-Dump erstellen
-# -----------------
-sh mysqldump.sh
-### ERRORMELDUNGEN ####
-# chmod: cannot access `/home/usr/zalomdev/public_html/typo3conf/ext/zalom/resources/mysqldump/zalomDump.sql': No such file or directory
-# rm: cannot remove `/home/usr/zalomdev/public_html/typo3conf/ext/zalom/resources/mysqldump/zalomDump.sql': No such file or directory
-
-
-# User "zalomdev" abmelden
-# ------------------------
-exit
+# DB-Dump via MySQLDumper erstellen
+# ---------------------------------
+http://zalomdev.digicom.nine.ch/typo3conf/ext/zalom/resources/msd/		Benutzer: mysqldumper	Passwort: Tutwect4
+[Backup] => [Neues Backup starten]
 
 ################################################################################################
 # SERVER: NEUE INSTALLATION
@@ -62,27 +47,29 @@ sh getData.sh
 
 # localconf.php anpassen
 # ----------------------
-Inhalt von localconf_original.php in localconf.php kopieren
+=> Anpassen von Benutzername und Passwort der DB
+=> Anpassen des Installtool-Passwortes
+=> Speichern von localconf.php
 
-> Anpassen von Benutzername und Passwort der DB
-> Anpassen des Installtool-Passwortes
+# DB-Dump via MySQLDumper einlesen
+# --------------------------------
+http://<username>.digicom.nine.ch/typo3conf/ext/zalom/resources/msd/		Benutzer: mysqldumper	Passwort: Tutwect4
+[Konfiguration] => [Datenbanken] => [Verbindungsparameter] auf neue Datenbank anpassen
+[Wiederherstellung] => aktuellen Dump auswählen => [Wiederherstellen]
 
-> Speichern von localconf.php
-
-# Install-Tool Starten
-# --------------------
-
-> Database Analyser
-> typo3conf/zalomDump.sql (IMPORT)
-
-# TYPO3 starten
-# -------------
-
-> Cache loeschen
+# Symlink TYPO3 Source korrigieren
+----------------------------------
+rm typo3_src
+ln -s /home/usr/digicomadmin/Share/TYPO3/Source/typo3_src-4.4 typo3_src
 
 # Aufraeumen !!!!
 ----------------
 sh typo3conf/ext/zalom/resources/shell/clearInstallData.sh
+
+# TYPO3 starten
+# -------------
+Benutzer: digicom	Passwort: 82FE8j50
+=> Cache loeschen
 
 ################################################################################################
 # FERTIG !!!! ;-))

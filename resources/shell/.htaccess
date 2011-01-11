@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Shell"
+AuthUserFile "/home/usr/zalomdev/.htpasswd"
+Require user zalomdev

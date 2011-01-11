@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "MySQLDumper"
+AuthUserFile "/home/usr/zalomdev/.htpasswd"
+Require user mysqldumper
