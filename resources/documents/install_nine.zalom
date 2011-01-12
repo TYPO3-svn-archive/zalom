@@ -1,0 +1,42 @@
+################################################################################################
+# SERVER: SOURCE (nine.ch)
+################################################################################################
+
+# Login (Nine.ch)
+# ---------------
+ssh digicomadmin@digicom.nine.ch (Passwort: InowWok1)
+
+# Hosting anlegen
+# ---------------
+# Damit wird die aktuelle ZALOM-Version inkl. Dump in den Webspace kopiert
+sudo add_hosting -d domain.ch
+
+# Datenblatt erstellen
+# --------------------
+
+################################################################################################
+# SERVER: NEUE INSTALLATION
+################################################################################################
+
+# DB-Dump via MySQLDumper einlesen
+# --------------------------------
+http://<username>.digicom.nine.ch/typo3conf/ext/zalom/resources/msd/		Benutzer: mysqldumper	Passwort: Tutwect4
+[Konfiguration] => [Datenbanken] => [Verbindungsparameter] auf neue Datenbank anpassen
+[Wiederherstellung] => aktuellen Dump auswählen => [Wiederherstellen]
+
+# Aufraeumen !!!!
+----------------
+# Wechseln zum neuen User
+sudo /usr/local/sbin/nine-change-to-user <username>
+# Wechseln ins html-Root
+cd public_html/
+rm -r typo3conf/ext/zalom/resources/msd
+
+# TYPO3 starten
+# -------------
+Benutzer: digicom	Passwort: 82FE8j50
+=> Cache loeschen
+
+################################################################################################
+# FERTIG !!!! ;-))
+################################################################################################

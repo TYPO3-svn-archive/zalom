@@ -12,8 +12,6 @@ if [ "$EDIT_FILES" != 0 ]
   	echo '--------------------------------------------------------------' 		>> $BACKUP_LOGFILE
   	find ../../ -mmin $BACKUP_TIME_RANGE										>> $BACKUP_LOGFILE
 	
-	echo "Clean Dump-Folder ($DUMP_STORAGE_ABS)"
-  	rm 	$DUMP_STORAGE_ABS/$DUMP_FILE 2> /dev/null 	
   	tar cfvz $BACKUP_STORAGE_REL/$BACKUP_TAR_FILE $BACKUP_TAR_SOURCE $BACKUP_TAR_EXCLUDE 
   else
   	echo ''																		>> $BACKUP_LOGFILE

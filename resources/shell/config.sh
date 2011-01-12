@@ -26,11 +26,11 @@ echo "Initial Config-File"
 	BACKUP_TIME_RANGE=-1438 							
 	BACKUP_STORAGE_REL=../backup
 	BACKUP_LOGFILE=$ZALOM_BASE/log/backup.log
-	BACKUP_TAR_EXCLUDE='--exclude=zalom/resources/backup'
+	BACKUP_TAR_EXCLUDE='--exclude=zalom/resources/backup --exclude=zalom/resources/mysqldump --exclude=zalom/resources/msd'
 	BACKUP_TAR_FILE=ZalomBackup_$(date +%d%m%y)_$(date +%H)h$(date +%M)min$(date +%S)sec.tar.gz
 	BACKUP_TAR_SOURCE=../../../zalom/
 
-# MysqlDump (mysqldump.php)
+# MysqlDump (backupDatabase.sh)
 # -------------------------------------------------
 
 	DUMP_STORAGE_ABS=$ZALOM_BASE/resources/mysqldump

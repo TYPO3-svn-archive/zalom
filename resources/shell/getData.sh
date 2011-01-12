@@ -11,7 +11,6 @@ wget -r -c --level=0 ftp://$ZALOM_FTP_USER:$ZALOM_FTP_PASSWORD@$ZALOM_FTP_URL/$Z
 wget -r -c --level=0 ftp://$ZALOM_FTP_USER:$ZALOM_FTP_PASSWORD@$ZALOM_FTP_URL/$ZALOM_FTP_WWWROOT/typo3temp
 wget -r -c --level=0 ftp://$ZALOM_FTP_USER:$ZALOM_FTP_PASSWORD@$ZALOM_FTP_URL/$ZALOM_FTP_WWWROOT/uploads
 
-#mv $ZALOM_FTP_URL/$ZALOM_FTP_WWWROOT/typo3conf/localconf.php $ZALOM_FTP_URL/$ZALOM_FTP_WWWROOT/typo3conf/localconf_original.php
 mv $ZALOM_FTP_URL/$ZALOM_FTP_WWWROOT/* ./
 
 # temporaere Daten loeschen
