@@ -17,7 +17,6 @@ lib.submenu.10 {
 			NO.wrapItemAndSub = <li>|</li>
 			NO.stdWrap.htmlSpecialChars = 1
 			NO.ATagBeforeWrap = 1
-			CUR = 1
 			CUR < .NO
 			CUR.wrapItemAndSub = <li class="active">|</li>
 			CUR.doNotLinkIt = 1

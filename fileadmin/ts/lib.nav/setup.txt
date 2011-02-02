@@ -22,12 +22,9 @@ lib.nav.10 {
 			NO.stdWrap.htmlSpecialChars = 1
 			NO.ATagBeforeWrap = 1
 			CUR < .NO
-			CUR = 1
 			CUR.wrapItemAndSub = <li class="active">|</li>
 			CUR.stdWrap.htmlSpecialChars = 1
-			ACT = 1
 			ACT < .CUR
-			IFSUB = 1
 			IFSUB < .NO
 			IFSUB.linkWrap = |
 		}

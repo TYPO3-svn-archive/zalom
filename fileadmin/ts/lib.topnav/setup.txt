@@ -7,11 +7,9 @@ lib.topnav.10 {
 	wrap = <ul>|</ul>
 	30 = HMENU
 	30 {
-		# stdWrap.prefixComment = 2|Output of lib.topnav.10.30
 		wrap = |
 		special = list
 		special.value = 24,27,28
-
 		1 = TMENU
 		1 {
 			expAll = 0
@@ -24,11 +22,9 @@ lib.topnav.10 {
 			NO.linkWrap = |
 			NO.ATagBeforeWrap = 1
 			CUR < .NO
-			CUR = 1
 			CUR.wrapItemAndSub = <li>|</li>
 			CUR.doNotLinkIt = 1
 			CUR.stdWrap.htmlSpecialChars = 1
-			IFSUB = 1
 			IFSUB < .NO
 			IFSUB.linkWrap = |
 		}
