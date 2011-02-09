@@ -20,3 +20,9 @@ TCEFORM.tt_content.colPos.altLabels.3 = Inhalt rechte Spalte
 # Hinzufuegen von zwei weiteren Positionsanzeigen
 TCEFORM.tt_content.colPos.addItems.4 = Fusszeile
 TCEFORM.tt_content.colPos.addItems.5 = Teaser
+
+# FE-Cache für Seiten mit Kalender löschen
+# Dieser Eintrag steht in fileadmin/pageTSconfig/ZALOM_master_pageTSconfig.txt
+#[globalVar = TSFE:id=10701]
+#TCEMAIN.clearCacheCmd = 10702,10703,10704,10705,10706,10707,10708,10709,10710
+#[END]

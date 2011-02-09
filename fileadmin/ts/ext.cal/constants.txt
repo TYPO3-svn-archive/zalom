@@ -1,2 +1,13 @@
 # Standard-Konstanten einbinden
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cal/static/ts/constants.txt">
+# ZALOM-Konfiguration
+plugin.tx_cal_controller {
+	pidList = 10701
+	emailAddress = {$plugin.zalom.email_from}
+	emailName = {$plugin.zalom.email_fromName}
+	view.dateFormat = %e. %B %Y
+	view.timeFormat = %H:%M
+#	view.week.weekTemplate = fileadmin/ext/cal/week.tmpl
+	view.event.eventModelTemplate = fileadmin/ext/cal/event_model.tmpl
+	view.list.listTemplate = fileadmin/ext/cal/list.tmpl
+}

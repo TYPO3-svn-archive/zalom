@@ -2,3 +2,71 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cal/static/ts/setup.txt">
 # Standard CSS-Styles einbinden
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cal/static/css/setup.txt">
+
+# ZALOM-Konfiguration
+plugin.tx_cal_controller {
+	calendarName =
+}
+plugin.tx_cal_controller.view {
+	allowedViews = month,list,event,search_all,search_event
+	backLink.wrap = <p>|</p>
+}
+# Monatsansicht
+plugin.tx_cal_controller.view.month {
+	navigation = 0
+}
+
+# Wochenansicht
+#plugin.tx_cal_controller.view.week {
+#	dateFormatWeekList = %a, %d. %b
+#}
+
+# Eventansicht
+plugin.tx_cal_controller.view.event {
+	event {
+		dontShowEndDateIfEqualsStartDate = 0
+		title.dataWrap = <h1>|</h1>
+		alldayTitle.dataWrap = <h1>|</h1>
+		startdate.dataWrap = <p>Beginn:&nbsp;|
+		starttime.dataWrap = ,&nbsp;|&nbsp;Uhr</p>
+		enddate.dataWrap = <p>Ende:&nbsp;|
+		enddate.noTrimWrap = 
+		endtime.dataWrap = ,&nbsp;|&nbsp;Uhr</p>
+		category.dataWrap = <p>%%%CATEGORY%%%:&nbsp; |</p>
+		category_link.dataWrap = <p>%%%CATEGORY%%%:&nbsp; |</p>
+		calendar_title.dataWrap = <p>%%%CALENDAR%%%:&nbsp; |</p>
+		organizer.dataWrap = <p>%%%ORGANIZER%%%:&nbsp; |</p>
+		location.dataWrap = <p>%%%LOCATION%%%:&nbsp; |</p>
+		teaser.dataWrap = <p>%%%TEASER_LABEL%%%:&nbsp; |</p>
+		description.dataWrap = 
+		image.stdWrap.dataWrap =
+		image.1.imageLinkWrap >
+		image.1.imageLinkWrap = 1
+		image.1.imageLinkWrap {
+			enable.override = 1
+            typolink {
+            	target = 
+				parameter.cObject = IMG_RESOURCE
+				parameter.cObject.file.import.data = TSFE:lastImageInfo|origFile
+				parameter.cObject.file.maxW = {$plugin.perfectlightbox.lightBoxMaxW}
+				parameter.cObject.file.maxH = {$plugin.perfectlightbox.lightBoxMaxH}
+				# Add the "rel" attribute needed to activate the lightbox effect.
+				# This assumes you want slimbox to be navigable
+				ATagParams = rel="lightbox[sb{field:uid}]"
+				ATagParams.insertData = 1
+            }
+		}
+	}
+}
+
+# Listenansicht
+plugin.tx_cal_controller.view.list {
+	endtime = +3 month
+	event {
+		starttime.dataWrap = |&nbsp;Uhr
+		starttime.noTrimWrap = |,&nbsp;||
+		enddate.noTrimWrap = 
+		endtime.dataWrap = |&nbsp;Uhr
+		endtime.noTrimWrap = | bis ||
+	}
+}
