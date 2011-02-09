@@ -32,7 +32,8 @@ RTE.default.hideButtons (
 	subscript, superscript,
 	chMode,
 	textindicator,
-	about
+	about,
+	findreplace, outdent, indent
 )
 
 # Standard
