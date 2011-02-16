@@ -2,81 +2,12 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:tt_news/pi/static/ts_new/constants.txt">
 
 plugin.tt_news {
-    # cat=plugin_tt_news_basic/file/1; type=text; label= LLL:EXT:tt_news/locallang.xml:tsce.templateFile
-  file.templateFile = fileadmin/ext/tt_news/tt_news.html
-
-    # cat=plugin_tt_news_basic/links/10; type=text; label= LLL:EXT:tt_news/locallang.xml:tsce.pid_list
-  pid_list = 10880
-
-    # cat=plugin_tt_news_basic/links/12; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.singlePid
-  singlePid = 10804
-
-    # cat=plugin_tt_news_basic/links/20; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.backPid
-  backPid = 10800
-  
-    # cat=plugin_tt_news_basic/links/30; type=text; label= LLL:EXT:tt_news/locallang.xml:tsce.archiveTypoLink.parameter
-  archiveTypoLink.parameter = 10803
-
-      # cat=plugin_tt_news_basic//40; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.limit
-  limit = 7
-
-    # cat=plugin_tt_news_basic//50; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.latestLimit
-  latestLimit = 3
-
-    # cat=plugin_tt_news_basic//70; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.recursive
-  recursive = 2
-
-  	# cat=plugin_tt_news_advanced/enable/20; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.useSubCategories
-  useSubCategories = 1
-  
-    # cat=plugin_tt_news_advanced/enable/30; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.showCatRootline
-  showCatRootline = 1
-  
-    # cat=plugin_tt_news_advanced/enable/50; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.useBidirectionalRelations
-  useBidirectionalRelations = 1
-
-	# cat=plugin_tt_news_advanced/enable/60; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.usePagesRelations
-  usePagesRelations = 1
-
-  	# cat=plugin_tt_news_advanced/enable/70; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.showRelatedNewsByCategory
-  showRelatedNewsByCategory = 0
-
- 	# cat=plugin_tt_news_advanced/enable/80; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.displaySubCategories
-  displaySubCategories = 0
-
-    # cat=plugin_tt_news_advanced/enable/90; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.useSPidFromCategory
-  useSPidFromCategory = 1
-
-    # cat=plugin_tt_news_advanced/enable/91; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.useMultiPageSingleView
-  useMultiPageSingleView = 0
-
-    # cat=plugin_tt_news_advanced/enable/96; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.showTitleAsPrevNextLink
-  showTitleAsPrevNextLink = 1
-  
-	# cat=plugin_tt_news_advanced//50; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.datetimeDaysToArchive
-  datetimeDaysToArchive = 0
-
-	# cat=plugin_tt_news_advanced//60; type=boolean; label= LLL:EXT:tt_news/locallang.xml:tsce.enableArchiveDate
-  enableArchiveDate = 1
-
-	# cat=plugin_tt_news_advanced/dims/10; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.singleMaxW
-  singleMaxW = 240
-  
-    # cat=plugin_tt_news_advanced/dims/20; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.singleMaxH
-  singleMaxH = 180
-
-    # cat=plugin_tt_news_advanced/dims/30; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.latestMaxW
-  latestMaxW = 60
-  
-    # cat=plugin_tt_news_advanced/dims/40; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.latestMaxH
-  latestMaxH = 40
-
-    # cat=plugin_tt_news_advanced/dims/50; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.listMaxW
-  listMaxW = 120
-  
-    # cat=plugin_tt_news_advanced/dims/60; type=int+; label= LLL:EXT:tt_news/locallang.xml:tsce.listMaxH
-  listMaxH = 90
-
-    # cat=plugin_tt_news_catmenu//20; type=options[tree,ajaxtree,nestedWraps]; label= LLL:EXT:tt_news/locallang.xml:tsce.displayCatMenu.mode
-  displayCatMenu.mode = nestedWraps
+	pid_list = 10880
+	singlePid = 10804
+	backPid = 10800
+	archiveTypoLink.parameter = 10803
+	showCatRootline = 1
+	useSPidFromCategory = 1
+    # options[tree,ajaxtree,nestedWraps]
+	displayCatMenu.mode = nestedWraps
 }

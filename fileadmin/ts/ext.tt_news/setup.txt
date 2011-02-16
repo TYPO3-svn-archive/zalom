@@ -1,5 +1,39 @@
 # Standard-Setup einbinden
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:tt_news/pi/static/ts_new/setup.txt">
+###<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tt_news/pi/static/css/setup.txt">
+
+plugin.tt_news.templateFile = fileadmin/ext/tt_news/tt_news_v3_template.html
+
+plugin.tt_news._LOCAL_LANG.de {
+	preAuthor = Autor:
+	backToList = « Zurück zu: %s
+	goToArchive = Zum Archiv »
+}
+
+plugin.tt_news.displaySingle {
+	# Die zwei unten stehenden Zeilen mit .crop funktionieren leider nicht
+	prevLinkTitle_stdWrap.crop = 10 | ... | 1
+	prevLinkLabel_stdWrap.wrap = <p>&#171;&nbsp;|</p>
+	nextLinkTitle_stdWrap.crop = 10 | ... | 1
+	nextLinkLabel_stdWrap.wrap = <p>|&nbsp;&#187;</p>
+	date_stdWrap.wrap = |,&nbsp;
+	time_stdWrap.wrap = |&nbsp;Uhr,
+	author_stdWrap.wrap =
+	subheader_stdWrap.wrap = <p><b>|</b></p>	
+}
+
+plugin.tt_news.displayList.subheader_stdWrap.append.wrap = <span class="news-list-morelink">&nbsp;|</span>
+
+plugin.tt_news.displayLatest {
+	image.file.maxW = 120
+	image.file.maxH = 80
+	subheader_stdWrap.append = TEXT
+	subheader_stdWrap.append {
+		data = register:newsMoreLink
+		wrap = <span class="news-list-morelink">&nbsp;|</span>
+		if.isTrue.field = bodytext
+	}
+}
 
 plugin.tt_news {
   displayXML {
@@ -10,10 +44,10 @@ plugin.tt_news {
     rss2_tmplFile = EXT:tt_news/res/rss_2.tmpl
     # possibile values: rss091 / rss2 / rdf / atom03 / atom1  
     xmlFormat = rss2
-    xmlTitle = example.com: Latest News
-    xmlLink = http://example.com/
-    xmlDesc = Latest News
-    xmlLang = en
+    xmlTitle = {$plugin.zalom.siteName}
+    xmlLink = {$plugin.zalom.siteUrl}
+    xmlDesc = News
+    xmlLang = de
     xmlIcon = fileadmin/tt_news_article.gif
     title_stdWrap.htmlSpecialChars = 1
     title_stdWrap.htmlSpecialChars.preserveEntities = 1
@@ -43,3 +77,8 @@ xmlnews {
     xhtml_cleaning = 0
   }
 }
+
+page.headerData.1452 = TEXT
+page.headerData.1452.value ( 
+	<link rel="alternate" type="application/rss+xml" title="{$plugin.zalom.siteName}: News" href="{$plugin.zalom.siteUrl}index.php?type=100" />
+)
