@@ -25,8 +25,8 @@ plugin.tt_news.displaySingle {
 plugin.tt_news.displayList.subheader_stdWrap.append.wrap = <span class="news-list-morelink">&nbsp;|</span>
 
 plugin.tt_news.displayLatest {
-	image.file.maxW = 120
-	image.file.maxH = 80
+	image.file.maxW = 120m
+	image.file.maxH = 80m
 	subheader_stdWrap.append = TEXT
 	subheader_stdWrap.append {
 		data = register:newsMoreLink
