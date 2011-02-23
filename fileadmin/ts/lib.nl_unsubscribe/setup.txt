@@ -1,7 +1,7 @@
 lib.nl_unsubscribe = COA
 lib.nl_unsubscribe {
 	20 = TEXT
-	20.value = <a href="{$plugin.zalom.siteUrl}index.php?id=10301&u=###USER_uid###&t=###SYS_TABLE_NAME###&a=###SYS_AUTHCODE###">[ Den Newsletter abbestellen können Sie hier. ]</a>
+	20.value = <p><a href="/index.php?id=10301&u=###USER_uid###&t=###SYS_TABLE_NAME###&a=###SYS_AUTHCODE###">[ Den Newsletter abbestellen k&ouml;nnen Sie hier. ]</a>
 	30 = TEXT
 	30.value = <img src="typo3conf/ext/direct_mail/res/gfx/dmailerping.gif" width="1" height="1" dmailerping="1" /></p>
 }

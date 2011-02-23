@@ -1,8 +1,8 @@
-mod.web_modules.dmail.from_email=heinz@digicom-medien.ch
+mod.web_modules.dmail.from_email=web@digicom-medien.ch
 mod.web_modules.dmail.from_name=Digicom digitale Medien AG
-mod.web_modules.dmail.replyto_email=heinz@digicom-medien.ch
+mod.web_modules.dmail.replyto_email=web@digicom-medien.ch
 mod.web_modules.dmail.replyto_name=Digicom digitale Medien AG
-mod.web_modules.dmail.return_path=heinz@digicom-medien.ch
+mod.web_modules.dmail.return_path=web@digicom-medien.ch
 mod.web_modules.dmail.organisation=Digicom digitale Medien AG
 mod.web_modules.dmail.priority=3
 mod.web_modules.dmail.sendOptions=3

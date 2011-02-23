@@ -1,9 +1,9 @@
 lib.nl_show_page = COA
 lib.nl_show_page {
 	10 = TEXT
-	10.value = <p><a href="{$plugin.zalom.siteUrl}index.php?id=
+	10.value = <p><a href="/index.php?id=
 	11 = TEXT
 	11.data = TSFE:id
 	12 = TEXT
-	12.value = ">[ Falls der Newsletter nicht korrekt dargestellt wird, klicken Sie hier. ]</a><br />
+	12.value = ">[ Falls der Newsletter nicht korrekt dargestellt wird, klicken Sie hier. ]</a></p>
 }
