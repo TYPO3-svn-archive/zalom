@@ -26,3 +26,9 @@ page {
 		robots = index,follow
 	} 
 }
+
+[userFunc = user_powermailOnCurrentPage]
+# if powermail is on current page and t3jquery is loaded include jquery and validation js using t3jquery
+page.includeJSFooter.powermail_frontend = fileadmin/ext/powermail/js/powermail_frontend.js
+page.31320.30.jsfile = fileadmin/ext/powermail/js/powermail_frontend.js
+[END]

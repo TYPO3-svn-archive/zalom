@@ -1,9 +1,13 @@
 # Standard-Konstanten einbinden
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/ext_typoscript_constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/static/pi1/constants.txt">
 
-plugin.powermail.libraryToUse = mootools
-plugin.powermail.mandatory.symbol = &nbsp;*
-plugin.powermail.mandatory.wrap = <span class="powermail_mandatory mandatory_field">|</span>
-plugin.powermail.clear.session = 1
-
-plugin.powermail.allow.email2sender = 0
+plugin.powermail {
+	PID.dblog = 10201
+	allow.email2sender = 0
+	markerALL.hideLabel = 1
+	format.datetime = %d.%m.%Y %H:%M
+	format.date = %d.%m.%Y
+	mandatory.symbol = &nbsp;*
+	mandatory.wrap = <span class="powermail_mandatory mandatory_field">|</span>
+	clear.session = 1
+}

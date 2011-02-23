@@ -1,2 +1,2 @@
 # Standard-Konfiguration einbinden
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/ext_typoscript_setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/static/pi1/setup.txt">
