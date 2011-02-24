@@ -10,9 +10,12 @@ RTE.default {
 	removeTags = span,div
 	#removeTagsAndContents = style,script
 }
-	
-# Reduce to the max
-# Diverse Formatierungen werden nicht zur Verfügung gestellt
+
+RTE.default{ 
+   showButtons := addToList(pastetoggle)
+}
+
+# Reduce to the max: diverse Formatierungen werden nicht zur Verfügung gestellt
 #
 # Alle möglichen Buttons
 # blockstylelabel, blockstyle, textstylelabel, textstyle, fontstyle, fontsize, formatblock, blockquote, 
@@ -35,6 +38,26 @@ RTE.default.hideButtons (
 	about,
 	findreplace, outdent, indent
 )
+
+# Specifies the order and grouping of buttons in the RTE tool bar. 
+# The keywords space, bar and linebreak may be used to insert a space, a separator or a line break at the corresponding position in the tool bar.
+
+# Default: 
+# blockstylelabel, blockstyle, space, textstylelabel, textstyle, linebreak,
+# bar, formattext, bold,  strong, italic, emphasis, big, small, 
+# insertedtext, deletedtext, citation, code, definition, keyboard, monospaced, quotation, sample, variable, 
+# bidioverride, strikethrough, subscript, superscript, underline, span, bar, fontstyle, space, fontsize, bar, 
+# formatblock, blockquote, insertparagraphbefore, insertparagraphafter, bar, 
+# lefttoright, righttoleft, language, showlanguagemarks, bar, left, center, right, justifyfull, bar, 
+# orderedlist, unorderedlist, definitionlist, definitionitem, outdent, indent, bar, textcolor, bgcolor, textindicator, bar, 
+# emoticon, insertcharacter, line, link, unlink, image, table, user, acronym, bar, findreplace, spellcheck, bar, 
+# chMode, inserttag, removeformat, bar, copy, cut, paste, bar, undo, redo, bar, showhelp, about, linebreak,  toggleborders, bar, 
+# tableproperties, tablerestyle, bar, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit, bar, 
+# columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, bar, 
+# cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
+RTE.default{
+	toolbarOrder = bold, italic, formatblock, orderedlist, unorderedlist, table, bar, insertcharacter, link, bar, removeformat, pastetoggle, bar, undo, redo, linebreak, tableproperties, tablerestyle, bar, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit, bar, columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, bar, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
+}
 
 # Standard
 # p, h1, h2, h3, h4, h5, h6, pre, address, blockquote, div
