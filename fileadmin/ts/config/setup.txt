@@ -40,6 +40,10 @@ config {
 
 	# Metatags indexieren (=1)
 	index_metatags = 1
+
+	# Eingebettes JavaScript nicht in Datei auslagern (wegen Google Analytics-Code)
+	removeDefaultJS = 0
+	
 }
 [END]
 

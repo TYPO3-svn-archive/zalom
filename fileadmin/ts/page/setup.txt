@@ -8,14 +8,6 @@ page {
 	10.disableExplosivePreview = 1
 	10.advancedHeaderInclusion= 1
 
-	config {
-		tx_m1_google_analytics {
-			# Google-Account-ID (erhält man, wenn die Domain eingetragen wird bei Google)
-			account = {$plugin.zalom.googleAnalyticsId}
-			# Spezielle Ordner die zusätzlich getrackt werden sollen.
-			trackDownloadsFrom = fileadmin,uploads
-		}
-	}
 	meta {
 		keywords.field = keywords
 		keywords.ifEmpty = {$plugin.zalom.metaKeywords}
@@ -25,6 +17,24 @@ page {
 		author.ifEmpty = {$plugin.zalom.metaAuthor}
 		robots = index,follow
 	} 
+
+	jsFooterInline {
+		10 = TEXT
+		10.value (
+			
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{$plugin.zalom.googleAnalyticsId}']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+		)
+	}
+
 }
 
 [userFunc = user_powermailOnCurrentPage]
