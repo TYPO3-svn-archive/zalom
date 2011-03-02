@@ -22,6 +22,7 @@ sudo add_hosting -d domain.ch
 # --------------------------------
 http://<username>.digicom.nine.ch/typo3conf/ext/zalom/resources/msd/		Benutzer: mysqldumper	Passwort: Tutwect4
 [Konfiguration] => [Datenbanken] => [Verbindungsparameter] auf neue Datenbank anpassen
+[Allgemein] Datenbank vor Wiederherstellung löschen: => ja
 [Wiederherstellung] => aktuellen Dump auswählen => [Wiederherstellen]
 
 # Aufraeumen !!!!
