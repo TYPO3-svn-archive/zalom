@@ -1,6 +1,5 @@
 # Globale Konfiguration fuer Website
 # Diese Werte werden auch mit 'cached' Seiten gespeichtert
-[PIDinRootline = 1]
 config {
 	# Lokalisierung fuer die Schweiz eingestellt
 	locale_all = de_CH.UTF-8
@@ -43,9 +42,11 @@ config {
 
 	# Eingebettes JavaScript nicht in Datei auslagern (wegen Google Analytics-Code)
 	removeDefaultJS = 0
-	
+
+	# Deaktiviert die Preview Info Box
+	disablePreviewInfo =1
+		
 }
-[END]
 
 # Globale Konfiguration fuer Newsletter
 [PIDinRootline = 10300]
