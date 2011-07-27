@@ -1,14 +1,14 @@
 # Standard-Konfiguration einbinden
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/static/pi1/setup.txt">
 
-lib.powermailjs.10 {
-  value = position: 'bottom left', offset: [0,0], message: '<div></div>',errorClass: 'powermail-field-error'
-}
-
 [userFunc = user_powermailOnCurrentPage] && [userFunc = user_powermailCheckT3jquery(false)]
 page.jsFooterInline.10 < lib.powermailjs
 [end]
 
 [userFunc = user_powermailOnCurrentPage] && [userFunc = user_powermailCheckT3jquery(true)]
 page.31320.40.jsdata.cObject < lib.powermailjs
+[end]
+
+[userFunc = user_powermailOnCurrentPage]
+page.includeCSS.powermail_frontend = fileadmin/ext/powermail/css/screen/powermail.css
 [end]

@@ -8,6 +8,5 @@ plugin.powermail {
 	format.datetime = %d.%m.%Y %H:%M
 	format.date = %d.%m.%Y
 	mandatory.symbol = &nbsp;*
-	mandatory.wrap = <span class="powermail_mandatory mandatory_field">|</span>
 	clear.session = 1
 }
