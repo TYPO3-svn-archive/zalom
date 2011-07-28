@@ -4,5 +4,5 @@ plugin.tx_odsajaxmailsubscription_pi1 {
 	JSinclude = 0
 	mail_html = 1
 	mail_confirmation = 1
-	mail_from = info@###DOMAIN###
+	mail_from = {$plugin.zalom.email_from}
 }
