@@ -7,17 +7,6 @@ page {
 	10.userFunc = tx_templavoila_pi1->main_page
 	10.disableExplosivePreview = 1
 	10.advancedHeaderInclusion= 1
-
-	meta {
-		keywords.field = keywords
-		keywords.ifEmpty = {$plugin.zalom.metaKeywords}
-		description.field = description
-		description.ifEmpty = {$plugin.zalom.metaDescription}
-		author.field = author
-		author.ifEmpty = {$plugin.zalom.metaAuthor}
-		robots = index,follow
-	}
-
 }
 
 # Dieses Setup ist in ext.powermail konfiguriert, da die Lade-Reihenfolge sonst zu falschen Resultaten führen könnte
