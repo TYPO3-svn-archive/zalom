@@ -12,9 +12,26 @@ options.createFoldersInEB =1
 # Damit wird im Seitenbaum statt des Seitentitels der Navigationstitel angezeigt.
 options.pageTree.showNavTitle = 1
 
-mod.web_txtemplavoilaM1.enableDeleteIconForLocalElements = 2
+# Secondary Options ausblenden
+options.enableShowPalettes = 0
 
 # config the Direct Mail Wizard
 tx_directmail.hideTabs = ext,quick
 tx_directmail.hideSteps = cat
 tx_directmail.defaultTab = int
+
+# Konfiguration des Modules Datei::Dateiliste
+options.file_list.enableDisplayBigControlPanel = activated
+options.file_list.enableDisplayThumbnails = activated
+options.file_list.enableClipBoard = selectable
+
+# Secondary Options konfigurieren
+setup.default.extendedView = 1
+setup.override.extendedView = 1
+
+# Benutzereinstellungen
+setup.thumbnailsByDefault = 1
+setup.edit_RTE = 1
+setup.lang = de
+setup.startModule = web_txtemplavoilaM1
+setup.enableFlashUploader = 1

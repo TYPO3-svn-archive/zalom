@@ -1,3 +1,4 @@
+# Optionen für direct_mail; lassen sich nicht mit ZALOM-Konstanten verknüpfen
 mod.web_modules.dmail.from_email=web@digicom-medien.ch
 mod.web_modules.dmail.from_name=Digicom digitale Medien AG
 mod.web_modules.dmail.replyto_email=web@digicom-medien.ch
@@ -12,8 +13,6 @@ mod.web_modules.dmail.plainParams=&type=99
 mod.web_modules.dmail.use_domain=1
 mod.web_modules.dmail.quick_mail_encoding=quoted-printable
 mod.web_modules.dmail.direct_mail_encoding=quoted-printable
-#mod.web_modules.dmail.quick_mail_charset=iso-8859-1
-#mod.web_modules.dmail.direct_mail_charset=iso-8859-1
 mod.web_modules.dmail.quick_mail_charset=utf-8
 mod.web_modules.dmail.direct_mail_charset=utf-8
 mod.web_modules.dmail.use_rdct=0
@@ -41,7 +40,11 @@ TCEFORM.tt_content.CType.removeItems = powermail_pi1
 
 # Safari baut zusätzliche <span> ein
 RTE.default {
-	removeTags = span
+	enableWordClean = 1
+	removeTrailingBR = 1
+	removeComments = 1
+	removeTags = span,div
+	removeTagsAndContents = style,script
 }
 	
 # Reduce to the max

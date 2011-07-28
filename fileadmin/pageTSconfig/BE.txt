@@ -26,3 +26,15 @@ TCEFORM.tt_content.colPos.addItems.5 = Teaser
 
 # FE-Cache für Seiten mit News löschen
 # Dieser Eintrag steht in fileadmin/pageTSconfig/ZALOM_master_pageTSconfig.txt
+
+# Konfiguration des Modules Web::Liste
+mod.web_list.enableDisplayBigControlPanel = activated
+mod.web_list.enableLocalizationView = selectable
+mod.web_list.enableClipBoard = selectable
+
+# Elemente in TemplaVoila löschen (nicht nur unlinken)
+mod.web_txtemplavoilaM1.enableDeleteIconForLocalElements = 2
+
+# Inhaltselemente-Assistent mit Darstellung in Tabs
+# ohne TemplaVoila: mod.wizards.newContentElement.renderMode = tabs
+templavoila.wizards.newContentElement.renderMode = tabs 

@@ -4,11 +4,11 @@ RTE.default.contentCSS = fileadmin/templates/css/screen/content.css
 
 # Safari baut zusätzliche <span> und <div> ein
 RTE.default {
-	#enableWordClean = 1
-	#removeTrailingBR = 1
-	#removeComments = 1
+	enableWordClean = 1
+	removeTrailingBR = 1
+	removeComments = 1
 	removeTags = span,div
-	#removeTagsAndContents = style,script
+	removeTagsAndContents = style,script
 }
 
 # FUNKTIONIERT NICHT IN SAFARI/MAC
@@ -104,20 +104,3 @@ RTE.default.buttons.link.popupSelector.disabled = 1
 # Link-Wizard: Kein Stil (CSS-Klasse) waehlbar
 RTE.default.classesAnchor >
 RTE.default.classesLinks >
-
-# RTE.default.proc
-# ist ein Objekt, das die Konfiguration für die Transformation des Inhaltes zwischen RTE-Feld und Datenbank
-# beinhaltet. Die Konfigurationsoptionen gelten für alle in TYPO3 verwendbaren RTEs und werden über die Klasse
-# t3lib_parsehtml_proc gesteuert.
-#RTE.default.proc {
-#	# Inhalt => RTE
-#	HTMLparser_rte {
-#		# keine Attribute bei diesen Tags
-#		noAttrib = blockquote
-#	}
-#	# Inhalt => DB
-#	HTMLparser_db {
-#		# keine Attribute bei diesen Tags
-#		noAttrib = blockquote
-#	}
-#}
