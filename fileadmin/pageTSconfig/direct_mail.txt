@@ -9,7 +9,7 @@ mod.web_modules.dmail.sendOptions=3
 mod.web_modules.dmail.includeMedia=0	
 mod.web_modules.dmail.flowedFormat=0
 mod.web_modules.dmail.plainParams=&type=99
-mod.web_modules.dmail.use_domain=0
+mod.web_modules.dmail.use_domain=1
 mod.web_modules.dmail.quick_mail_encoding=quoted-printable
 mod.web_modules.dmail.direct_mail_encoding=quoted-printable
 #mod.web_modules.dmail.quick_mail_charset=iso-8859-1
