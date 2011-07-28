@@ -1,0 +1,26 @@
+# Konstanten der EXT: TEQneers SEO Enhancements
+# Extension Key: tq_seo
+
+# Standard-Konstanten einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tq_seo/static/default/constants.txt">
+
+# ZALOM-Konfiguration
+plugin.tq_seo {
+	metaTags {
+		enableDC = 0
+		description = {$plugin.zalom.metaDescription}
+		keywords = {$plugin.zalom.metaKeywords}
+		copyright = {$plugin.zalom.metaCopyright}
+		author = {$plugin.zalom.metaAuthor}
+		revisit = 7
+		googleVerification = {$plugin.zalom.googleVerification}
+	}
+	services {
+		googleAnalytics = {$plugin.zalom.googleAnalyticsId}
+	}
+	pageTitle {
+		sitetitlePosition = 1
+	}
+}
+
+plugin.tq_seo.sitemap.enable = 1

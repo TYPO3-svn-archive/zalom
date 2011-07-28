@@ -1,0 +1,5 @@
+# Setup der EXT: TEQneers SEO Enhancements
+# Extension Key: tq_seo
+
+# Standard-Setup einbinden
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tq_seo/static/default/setup.txt">
