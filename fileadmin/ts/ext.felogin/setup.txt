@@ -36,7 +36,7 @@ plugin.tx_felogin_pi1 {
 		wrap = <h2>|</h2>
 	}
 	errorMessage_stdWrap {
-		wrap = <p>|</p>
+		wrap = <p class="error">|</p>
 	}
 	
 	forgotHeader_stdWrap {
