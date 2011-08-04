@@ -23,7 +23,7 @@ lib.search {
    }
    20 < lib.value
    20 {
-      wrap = <input type="text" name="tx_indexedsearch[sword]" value="|" class="search search_input"/>
+      wrap = <input type="text" name="tx_indexedsearch[sword]" value="|" onclick="if(this.value=='Suche')this.value='';" class="search search_input"/>
    }
    30 = TEXT
    30 {
