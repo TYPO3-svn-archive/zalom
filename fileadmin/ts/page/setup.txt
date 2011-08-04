@@ -17,3 +17,10 @@ page {
 #[userFunc = user_powermailOnCurrentPage] && [userFunc = user_powermailCheckT3jquery(true)]
 #page.31320.40.jsdata.cObject < lib.powermailjs
 #[end]
+
+# In den jeweiligen Setup definiert, damit die angepassten CSS geladen werden
+#page.includeCSS.ve_guestbook = fileadmin/ext/ve_guestbook/css/screen/ve_guestbook.css
+#page.includeCSS.powermail_frontend = fileadmin/ext/powermail/css/screen/powermail.css
+#page.includeCSS.indexed_search = fileadmin/ext/indexed_search/css/screen/indexed_search.css
+#page.includeCSS.cal = fileadmin/ext/cal/css/screen/cal.css
+#page.includeCSS.tt_news = fileadmin/ext/tt_news/css/screen/tt_news.css
