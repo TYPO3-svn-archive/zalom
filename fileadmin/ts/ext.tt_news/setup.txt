@@ -2,6 +2,10 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:tt_news/pi/static/ts_new/setup.txt">
 ###<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tt_news/pi/static/css/setup.txt">
 
+# CSS einbinden
+page.includeCSS.tt_news = fileadmin/ext/tt_news/css/screen/tt_news.css
+
+
 plugin.tt_news.templateFile = fileadmin/ext/tt_news/tt_news_v3_template.html
 
 plugin.tt_news._LOCAL_LANG.de {
