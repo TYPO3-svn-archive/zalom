@@ -1,6 +1,10 @@
 # Standard-Setup einbinden
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:ve_guestbook/ext_typoscript_setup.txt">
 
+# CSS einbinden
+page.includeCSS.ve_guestbook = fileadmin/ext/ve_guestbook/css/screen/ve_guestbook.css
+
+
 # E-Mail-Adressen mit Spam-Schutz anzeigen
 # ist global in config.ts aktiviert
 
