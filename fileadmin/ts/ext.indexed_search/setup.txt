@@ -1,6 +1,9 @@
+# CSS einbinden
+page.includeCSS.indexed_search = fileadmin/ext/indexed_search/css/screen/indexed_search.css
+
+# ZALOM Konfiguration
 plugin.tx_indexedsearch {
-#	templateFile = EXT:zalom/fileadmin/ext/indexed_search/indexed_search.html
-	templateFile = fileadmin/ext/indexed_search/indexed_search_css_tmpl.html
+	templateFile = EXT:indexed_search/pi/template_css.tmpl
 	
 	show {
 		rules = 1
@@ -53,26 +56,25 @@ plugin.tx_indexedsearch {
 	}
 
 	result_link_target = 
-/*
-	flagRendering = CASE
-	flagRendering {
-		key.current = 1
-		2 = TEXT
-		2.value = German
-		default = TEXT
-		default.value = English
-	}
-*/
-/*
-	iconRendering = CASE
-	iconRendering {
-		key.current = 1
-		html = TEXT
-		html.value = HtmL
-		default = TEXT
-		default.value = TYPO3 pages
-	}
-*/
+
+#	flagRendering = CASE
+#	flagRendering {
+#		key.current = 1
+#		2 = TEXT
+#		2.value = German
+#		default = TEXT
+#		default.value = English
+#	}
+
+#	iconRendering = CASE
+#	iconRendering {
+#		key.current = 1
+#		html = TEXT
+#		html.value = HtmL
+#		default = TEXT
+#		default.value = TYPO3 pages
+#	}
+
 	forwardSearchWordsInResultLink = 0
 
 	# Setting default values for piVars (please see the source code for the form-field names which you can preset values for here)
@@ -82,6 +84,21 @@ plugin.tx_indexedsearch {
 		group = flat
 	}
 	_CSS_DEFAULT_STYLE >
-	_LOCAL_LANG {
-	}
+#	_LOCAL_LANG {
+#	}
+
+  browseBoxWrap = <div class="browsebox">|</div>
+  pageWrap = <span>|</span>
+  _LOCAL_LANG.default {
+    pi_list_browseresults_prev = «
+    pi_list_browseresults_page = 
+    pi_list_browseresults_next = »
+  } 
+  _LOCAL_LANG.de {
+    pi_list_browseresults_prev = «
+    pi_list_browseresults_page = 
+    pi_list_browseresults_next = »
+  }
+
 }
+
