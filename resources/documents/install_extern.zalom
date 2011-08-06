@@ -1,46 +1,45 @@
 ################################################################################################
-# SERVER: SOURCE (nine.ch)
+# SERVER: SOURCE (mittwald.de)
 ################################################################################################
 
-# Login (Nine.ch)
+# Hosting mit TYPO3 einrichten über das Kundencenter
+
+# Login
 # ---------------
-ssh digicomadmin@digicom.nine.ch (Passwort: InowWok1)
+ssh [USER]@[USER].mittwaldserver.info
 
-# Hosting anlegen
-# ---------------
-sudo add_hosting -d domain.ch
-
-# Datenblatt erstellen
-# --------------------
-
-# DB-Dump via MySQLDumper erstellen
-# ---------------------------------
-http://zalomdev.digicom.nine.ch/typo3conf/ext/zalom/resources/msd/		Benutzer: mysqldumper	Passwort: Tutwect4
-[Backup] => [Neues Backup starten]
 
 ################################################################################################
 # SERVER: NEUE INSTALLATION
 ################################################################################################
 
-# Wechseln zum neuen User
-# ----------------------------------
-sudo /usr/local/sbin/nine-change-to-user <username>
-
-# Wechseln ins html-Root
+# Wechseln ins typo3-Root
 # ----------------------
-cd public_html/
+cd html/typo3/
 
-# Install-Script holen bei der Zalom-Standardinstallation
-# -------------------------------------------------------
-wget -r -c ftp://zalomdev:JiHohov1@zalomdev.digicom.nine.ch/public_html/typo3conf/ext/zalom/resources/shell/getData.sh
-mv zalomdev.digicom.nine.ch/public_html/typo3conf/ext/zalom/resources/shell/getData.sh ./getData.sh
+# Install-Script holen bei der Zalom-Dummy-Standardinstallation
+# -------------------------------------------------------------
+wget -r -c --level=0 ftp://digicomadmin:InowWok1@digicom.nine.ch/Share/TYPO3/Dummy/zalom-1.0.3
 
-wget -r -c ftp://zalomdev:JiHohov1@zalomdev.digicom.nine.ch/public_html/typo3conf/ext/zalom/resources/shell/config.sh
-mv zalomdev.digicom.nine.ch/public_html/typo3conf/ext/zalom/resources/shell/config.sh ./config.sh
+# Entfernen oder umbenennen der Standard-Dateien und Ordner, welche durch ZALOM überschrieben werden
+rm clear.gif 
+rm -R fileadmin/
+mv .htaccess .htaccess_mittwald
+rm -R typo3conf/
+rm -R typo3temp/
+rm -R uploads/
 
-# Install-Script starten
-# ----------------------
-sh getData.sh
+# Verschieben der ZALOM-Dateien ins TYPO3-Root
+mv digicom.nine.ch/Share/TYPO3/Dummy/zalom-1.0.3/clear.gif ./
+mv digicom.nine.ch/Share/TYPO3/Dummy/zalom-1.0.3/fileadmin/ ./
+mv digicom.nine.ch/Share/TYPO3/Dummy/zalom-1.0.3/_.htaccess ./
+mv digicom.nine.ch/Share/TYPO3/Dummy/zalom-1.0.3/robots.txt ./
+mv digicom.nine.ch/Share/TYPO3/Dummy/zalom-1.0.3/typo3conf/ ./
+mv digicom.nine.ch/Share/TYPO3/Dummy/zalom-1.0.3/typo3temp/ ./
+mv digicom.nine.ch/Share/TYPO3/Dummy/zalom-1.0.3/uploads/ ./
+
+# löschen des Verzeichnisschutzes, damit MySQLDumper funktioniert
+rm typo3conf/ext/zalom/resources/msd/.htaccess
 
 # Aptana: FTP-Verbindung herstellen
 # ---------------------------------
@@ -49,27 +48,28 @@ sh getData.sh
 # ----------------------
 => Anpassen von Benutzername und Passwort der DB
 => Anpassen des Installtool-Passwortes
+=> Anpassen Sitename
+=> Zusatzkonfigurationen gemäss Vorlagen einfügen wie Pfade zu gm etc.
 => Speichern von localconf.php
 
 # DB-Dump via MySQLDumper einlesen
 # --------------------------------
 http://<username>.digicom.nine.ch/typo3conf/ext/zalom/resources/msd/		Benutzer: mysqldumper	Passwort: Tutwect4
 [Konfiguration] => [Datenbanken] => [Verbindungsparameter] auf neue Datenbank anpassen
+[Konfiguration] => [Allgemein] => Datenbank vor Wiederherstellung löschen => ja
 [Wiederherstellung] => aktuellen Dump auswählen => [Wiederherstellen]
-
-# Symlink TYPO3 Source korrigieren
-----------------------------------
-rm typo3_src
-ln -s /home/usr/digicomadmin/Share/TYPO3/Source/typo3_src-4.4 typo3_src
-
-# Aufraeumen !!!!
-----------------
-sh typo3conf/ext/zalom/resources/shell/clearInstallData.sh
 
 # TYPO3 starten
 # -------------
 Benutzer: digicom	Passwort: 82FE8j50
 => Cache loeschen
+=> Installtool => Clean up => alles löschen
+=> Benutzer ändern
+
+# Aufraeumen !!!!
+----------------
+rm -R typo3conf/ext/zalom/resources/msd
+rm -R digicom.nine.ch/
 
 ################################################################################################
 # FERTIG !!!! ;-))
